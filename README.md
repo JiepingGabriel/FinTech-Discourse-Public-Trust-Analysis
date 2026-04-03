@@ -1,1 +1,34 @@
-这份文档总结了我们项目的底层数据逻辑、算法工程以及核心的数据洞见。我们的项目旨在利用传统人工智能工具（如机器学习、聚类、文本和情感分析），从人文学科的视角批判性地分析金融科技与企业话语权对公众信任的影响 。请在撰写期末报告的“技术执行 (Technical Execution)”和“人文学科分析 (Humanistic Analysis)”  章节时参考以下核心内容。1. 核心数据来源 (Data Sourcing)为了构建对比鲜明的语料库，我们通过 Python 脚本构建了两个对齐的数据集：企业官方语态 (Official Text)：调用 SEC EDGAR API 批量下载了纳斯达克巨头企业在 2020-2024 年间提交的 Form 8-K（重大事件报告/并购公告）原始 HTML 文件，并从中提取纯文本。公众感知语态 (Public Text & Sentiment)：利用现成的金融新闻头条与社交媒体评论数据库。时间窗口对齐：为了确保相关性，我们将公众舆论的抓取窗口严格限制在官方公告发布的 T-1 至 T+7 天内，并计算了该窗口内的平均公众情感得分 (Sentiment Score)。2. 数据清洗与特征工程 (Data Cleaning & Feature Engineering)在预处理阶段，我们遇到了金融自然语言处理中经典的**“八股文霸权 (Boilerplate Domination)”**问题。清洗策略：SEC 官方文件充斥着冗长的法律免责声明（如 "Forward-Looking Statements"）和无意义的数字、日期。如果我们直接进行特征提取，真正的“修辞”会被掩盖。技术实现：我们基于 pandas 和正则表达式 (Regex) 移除了所有数字和标点，并深度定制了金融专属停用词库 (Custom Stop Words)，剔除了诸如 securities, exchange, commission, pursuant, hereinafter 等数百个法律套话，确保进入模型的是最纯净的“企业叙事”。3. 建模方法 (Modeling Methodology)在完成文本清洗后，我们利用 scikit-learn 管道构建了一个结合特征提取与无监督学习的传统 AI 模型 ：文本向量化 (TF-IDF)：使用 TfidfVectorizer 提取了每篇官方公报的核心特征词汇（设定 ngram_range=(1, 2) 以捕获像 "consenting holder" 这样的关键短语）。K-Means 主题聚类：这部分是算法的核心。我们对 TF-IDF 矩阵应用了无监督的 K-Means 聚类算法（设定 n_clusters=3），让 AI 自动阅读并归纳这些巨头企业的公关话术，最终将其划分为三个典型的“叙事流派”。4. 结果解读与人文学科分析 (Results & Humanistic Insights)我们生成了两张核心图表（箱线图与高维气泡图），揭示了企业话语权与公众信任之间的深刻张力。请在报告中重点强调以下三个由 AI 聚类出的“叙事流派”及其社会心理学意义：Cluster 0: 愿景与增长派 (Vision & Growth)核心词汇：emerging, growth, communications分析要点：这是最主流的叙事（如谷歌、微软），但其公众情感得分却最低，甚至在气泡图中显示出强烈的负面异常值。这说明**“公关修辞已经失效”**。在公众眼中，官方描绘的“新兴增长”往往与“行业垄断”或“随之而来的裁员优化”挂钩。长篇大论的愿景反而加剧了社会的不信任。Cluster 1: 程序与合规派 (Procedural & Compliance)核心词汇：plan, adopted, pre arranged分析要点：这类叙事摒弃了宏大的愿景，转向枯燥的合规宣告（如明确列出高管的股票交易计划）。令人意外的是，它获得了最高的正面情感得分。这印证了**“透明度即信任”**的逻辑——公众并不排斥资本运作，排斥的是暗箱操作。Cluster 2: 资本与债务派 (Debt & Financing)核心词汇：notes, indenture, escrow分析要点：这类文本充满硬核金融术语，专注于解释资金的交割与债务契约。它获得了中性偏上的社会评价，表明用理性的财务披露降低信息不对称，比空洞的情感安抚更能稳定市场情绪。报告核心结论提炼：AI 数据分析证实了一个反直觉的现象——在重大的商业变动中，企业试图用感性、愿景式的语言来获取社会认同往往会适得其反；相反，极其理性的财务披露和枯燥的程序合规语言，反而更能赢回公众的信任。
+This document summarizes the underlying data logic, algorithmic engineering, and core data insights of our project. Our project aims to critically analyze the impact of fintech and corporate discourse on public trust from a humanities perspective, using traditional AI tools such as machine learning, clustering, and text/sentiment analysis. Please refer to the following core content when drafting the Technical Execution and Humanistic Analysis sections of the final report.
+
+1. Data Sourcing
+To construct a contrastively rich corpus, we built two aligned datasets via Python scripts:
+Official Corporate Voice (Official Text): We called the SEC EDGAR API to bulk-download raw HTML files of Form 8-K filings (material event reports / M&A announcements) submitted by major NASDAQ companies between 2020–2024, and extracted plain text from them.
+Public Perception Voice (Public Text & Sentiment): We leveraged an existing database of financial news headlines and social media comments.
+Time-Window Alignment: To ensure relevance, we strictly confined the public sentiment collection window to T−1 through T+7 days relative to each official announcement, and computed the average public sentiment score within that window.
+
+2. Data Cleaning & Feature Engineering
+During preprocessing, we encountered the classic financial NLP challenge of "Boilerplate Domination."
+Cleaning Strategy: SEC filings are saturated with lengthy legal disclaimers (e.g., "Forward-Looking Statements") and meaningless numbers and dates. Direct feature extraction at this stage would obscure the genuine rhetorical content.
+Technical Implementation: Using pandas and regular expressions (Regex), we removed all numerals and punctuation, and built a deeply customized financial-domain stop-word list, eliminating hundreds of legal boilerplate terms such as securities, exchange, commission, pursuant, and hereinafter — ensuring that only the purest "corporate narrative" entered the model.
+
+3. Modeling Methodology
+Following text cleaning, we used a scikit-learn pipeline to build a traditional AI model combining feature extraction with unsupervised learning:
+Text Vectorization (TF-IDF): We applied TfidfVectorizer to extract core feature terms from each official filing, setting ngram_range=(1, 2) to capture key phrases such as "consenting holder."
+K-Means Topic Clustering: This is the algorithmic core. We applied unsupervised K-Means clustering (n_clusters=3) to the TF-IDF matrix, allowing the model to autonomously read and categorize the PR rhetoric of these major corporations, ultimately grouping filings into three archetypal "narrative genres."
+
+4. Results & Humanistic Insights
+We produced two key visualizations — a box plot and a high-dimensional bubble chart — revealing the profound tension between corporate discourse and public trust. The report should foreground the following three AI-derived narrative clusters and their social-psychological significance:
+Cluster 0: Vision & Growth
+
+Key terms: emerging, growth, communications
+Analysis: This is the most prevalent narrative style (e.g., Google, Microsoft), yet it yields the lowest public sentiment scores — with strongly negative outliers visible in the bubble chart. This demonstrates that "PR rhetoric has lost its effect." In the public eye, officially proclaimed "emerging growth" is routinely associated with industry monopolization or the workforce reductions that follow. Lengthy vision statements paradoxically deepen social distrust.
+
+Cluster 1: Procedural & Compliance
+
+Key terms: plan, adopted, pre-arranged
+Analysis: This narrative style abandons grand vision in favor of dry compliance declarations (e.g., explicitly disclosing executives' pre-arranged stock trading plans). Counterintuitively, it achieves the highest positive sentiment scores — validating the logic of "transparency as trust." The public does not object to capital operations; what it objects to is opacity and backroom dealings.
+
+Cluster 2: Debt & Financing
+
+Key terms: notes, indenture, escrow
+Analysis: These documents are dense with hard financial terminology, focusing on the mechanics of fund transfers and debt covenants. They receive moderately positive social evaluations, suggesting that rational financial disclosure — by reducing information asymmetry — is more effective at stabilizing market sentiment than hollow emotional reassurance.
