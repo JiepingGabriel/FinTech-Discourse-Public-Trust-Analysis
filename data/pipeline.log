@@ -1,0 +1,1568 @@
+2026-03-29 13:45:42,736 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 13:45:42,736 [INFO] __main__: Dry-run 模式：只做全文检索，不下载文件
+2026-03-29 13:45:50,434 [INFO] sec_collector: [EDGAR] 8-K 并购相关文件：共找到 100 条
+2026-03-29 13:45:50,924 [WARNING] sec_collector: 请求失败 (第 1/3 次): 500 Server Error: Internal Server Error for url: https://efts.sec.gov/LATEST/search-index?q=%22merger%22+OR+%22acquisition%22+OR+%22definitive+agreement%22+OR+%22business+combination%22&forms=S-4&dateRange=custom&startdt=2020-01-01&enddt=2024-12-31&from=0
+2026-03-29 13:45:53,604 [INFO] sec_collector: [EDGAR] S-4 并购相关文件：共找到 100 条
+2026-03-29 13:49:42,382 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 13:49:42,382 [INFO] __main__: Dry-run 模式：只做检索，不下载文件
+2026-03-29 13:49:42,382 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 13:49:43,121 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 13:49:43,899 [INFO] sec_collector: [MSFT] Submissions API：找到 17 份候选文件
+2026-03-29 13:49:44,416 [INFO] sec_collector: [GOOGL] Submissions API：找到 9 份候选文件
+2026-03-29 13:50:25,005 [INFO] __main__: =======================================================
+2026-03-29 13:50:25,005 [INFO] __main__: Step 1 / 3  初始化数据库
+2026-03-29 13:50:25,005 [INFO] __main__: =======================================================
+2026-03-29 13:50:25,007 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 13:50:25,007 [INFO] __main__: =======================================================
+2026-03-29 13:50:25,007 [INFO] __main__: Step 2 / 3  采集 SEC EDGAR 文件
+2026-03-29 13:50:25,007 [INFO] __main__: =======================================================
+2026-03-29 13:50:25,007 [INFO] sec_collector: 精准模式：查询 2 个 ticker
+2026-03-29 13:50:25,007 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 13:50:25,991 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 13:50:26,762 [INFO] sec_collector: [MSFT] Submissions API：找到 14 份候选文件
+2026-03-29 13:50:27,337 [INFO] sec_collector: [GOOGL] Submissions API：找到 9 份候选文件
+2026-03-29 13:50:27,337 [INFO] sec_collector: 候选文件总数：19
+2026-03-29 13:50:27,338 [INFO] sec_collector: [1/19] MSFT | 8-K | 2024-12-03 | 0000950170-24-132722
+2026-03-29 13:50:28,444 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:28,444 [INFO] sec_collector: [2/19] MSFT | 8-K | 2023-11-06 | 0001193125-23-271376
+2026-03-29 13:50:29,618 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:29,618 [INFO] sec_collector: [3/19] MSFT | 8-K | 2023-10-30 | 0001193125-23-265616
+2026-03-29 13:50:30,658 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:30,658 [INFO] sec_collector: [4/19] MSFT | 8-K | 2023-10-16 | 0001104659-23-109428
+2026-03-29 13:50:31,689 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:31,689 [INFO] sec_collector: [5/19] MSFT | 8-K | 2023-10-13 | 0001193125-23-255762
+2026-03-29 13:50:32,751 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:32,751 [INFO] sec_collector: [6/19] MSFT | 8-K | 2023-10-11 | 0001193125-23-254151
+2026-03-29 13:50:33,804 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:33,804 [INFO] sec_collector: [7/19] MSFT | 8-K | 2021-07-08 | 0001193125-21-210827
+2026-03-29 13:50:34,860 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:34,861 [INFO] sec_collector: [8/19] MSFT | 8-K | 2021-06-17 | 0001193125-21-192783
+2026-03-29 13:50:35,897 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:35,897 [INFO] sec_collector: [9/19] MSFT | 8-K | 2021-03-17 | 0001193125-21-084239
+2026-03-29 13:50:36,967 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:36,967 [INFO] sec_collector: [10/19] MSFT | 8-K | 2021-03-02 | 0001193125-21-065751
+2026-03-29 13:50:38,135 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:38,135 [INFO] sec_collector: [11/19] GOOGL | 8-K | 2024-10-29 | 0001652044-24-000115
+2026-03-29 13:50:39,624 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:39,624 [INFO] sec_collector: [12/19] GOOGL | 8-K | 2024-09-24 | 0001652044-24-000097
+2026-03-29 13:50:41,535 [INFO] sec_collector:   ✓ 完成，文本长度 3,117 字符
+2026-03-29 13:50:41,535 [INFO] sec_collector: [13/19] GOOGL | 8-K | 2024-08-06 | 0001652044-24-000085
+2026-03-29 13:50:42,808 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:42,808 [INFO] sec_collector: [14/19] GOOGL | 8-K | 2024-07-23 | 0001652044-24-000076
+2026-03-29 13:50:43,823 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:43,824 [INFO] sec_collector: [15/19] GOOGL | 8-K | 2024-06-26 | 0001193125-24-168745
+2026-03-29 13:50:45,003 [INFO] sec_collector:   ✓ 完成，文本长度 2,825 字符
+2026-03-29 13:50:45,003 [INFO] sec_collector: [16/19] GOOGL | 8-K | 2024-04-25 | 0001652044-24-000047
+2026-03-29 13:50:46,000 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:46,001 [INFO] sec_collector: [17/19] GOOGL | 8-K | 2024-02-08 | 0001652044-24-000032
+2026-03-29 13:50:47,077 [INFO] sec_collector:   ✓ 完成，文本长度 3,340 字符
+2026-03-29 13:50:47,077 [INFO] sec_collector: [18/19] GOOGL | 8-K | 2023-04-20 | 0001652044-23-000034
+2026-03-29 13:50:48,106 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:48,107 [INFO] sec_collector: [19/19] GOOGL | 8-K | 2023-01-25 | 0001652044-23-000005
+2026-03-29 13:50:49,118 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 13:50:49,118 [INFO] sec_collector: 采集完毕，有效记录：3 条
+2026-03-29 13:50:49,118 [INFO] __main__: =======================================================
+2026-03-29 13:50:49,118 [INFO] __main__: Step 3 / 3  对齐公众数据并写入数据库
+2026-03-29 13:50:49,118 [INFO] __main__: =======================================================
+2026-03-29 13:50:49,118 [INFO] aligner: [对齐 1/3] GOOGL | 2024-09-24
+2026-03-29 13:50:50,906 [INFO] public_collector: [Finnhub] GOOGL @ 2024-09-24：获取 0 条新闻
+2026-03-29 13:50:51,640 [WARNING] public_collector: GDELT 请求失败 [Alphabet Inc.]: 429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Alphabet+Inc.%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20240923000000&enddatetime=20241001235959&sort=hybridrel
+2026-03-29 13:50:51,643 [INFO] aligner:   官方文本：3,117 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 13:50:51,643 [INFO] aligner: [对齐 2/3] GOOGL | 2024-06-26
+2026-03-29 13:50:53,419 [INFO] public_collector: [Finnhub] GOOGL @ 2024-06-26：获取 0 条新闻
+2026-03-29 13:51:05,304 [INFO] public_collector: [GDELT] Alphabet Inc. @ 2024-06-26：获取 11 条新闻
+2026-03-29 13:51:05,308 [INFO] public_collector: [聚合] GOOGL @ 2024-06-26：9 条，情绪均值 = 0.2638
+2026-03-29 13:51:05,309 [INFO] aligner:   官方文本：2,825 字符 | 公众新闻：9 条 | 情绪均值：0.2638 | 并购类型：unknown
+2026-03-29 13:51:05,309 [INFO] aligner: [对齐 3/3] GOOGL | 2024-02-08
+2026-03-29 13:51:07,330 [INFO] public_collector: [Finnhub] GOOGL @ 2024-02-08：获取 0 条新闻
+2026-03-29 13:51:08,032 [WARNING] public_collector: GDELT 请求失败 [Alphabet Inc.]: 429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=%22Alphabet+Inc.%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20240207000000&enddatetime=20240215235959&sort=hybridrel
+2026-03-29 13:51:08,037 [INFO] aligner:   官方文本：3,340 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 13:51:08,037 [INFO] aligner: 对齐完成，共 3 条记录写入数据库
+2026-03-29 13:51:08,057 [INFO] __main__: CSV 快照已保存：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.csv
+2026-03-29 15:28:38,779 [INFO] __main__: =======================================================
+2026-03-29 15:28:38,779 [INFO] __main__: Step 1 / 3  初始化数据库
+2026-03-29 15:28:38,779 [INFO] __main__: =======================================================
+2026-03-29 15:28:38,782 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 15:28:38,782 [INFO] __main__: =======================================================
+2026-03-29 15:28:38,782 [INFO] __main__: Step 2 / 3  采集 SEC EDGAR 文件
+2026-03-29 15:28:38,782 [INFO] __main__: =======================================================
+2026-03-29 15:28:38,782 [INFO] sec_collector: 精准模式：查询 2 个 ticker
+2026-03-29 15:28:38,782 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 15:28:39,707 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 15:28:40,888 [INFO] sec_collector: [MSFT] Submissions API：找到 14 份候选文件
+2026-03-29 15:28:41,450 [INFO] sec_collector: [GOOGL] Submissions API：找到 9 份候选文件
+2026-03-29 15:28:41,450 [INFO] sec_collector: 候选文件总数：19
+2026-03-29 15:28:41,451 [INFO] sec_collector: [1/19] MSFT | 8-K | 2024-12-03 | 0000950170-24-132722
+2026-03-29 15:28:42,160 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:42,161 [INFO] sec_collector: [2/19] MSFT | 8-K | 2023-11-06 | 0001193125-23-271376
+2026-03-29 15:28:42,753 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:42,754 [INFO] sec_collector: [3/19] MSFT | 8-K | 2023-10-30 | 0001193125-23-265616
+2026-03-29 15:28:43,347 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:43,347 [INFO] sec_collector: [4/19] MSFT | 8-K | 2023-10-16 | 0001104659-23-109428
+2026-03-29 15:28:43,957 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:43,957 [INFO] sec_collector: [5/19] MSFT | 8-K | 2023-10-13 | 0001193125-23-255762
+2026-03-29 15:28:44,530 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:44,530 [INFO] sec_collector: [6/19] MSFT | 8-K | 2023-10-11 | 0001193125-23-254151
+2026-03-29 15:28:45,108 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:45,109 [INFO] sec_collector: [7/19] MSFT | 8-K | 2021-07-08 | 0001193125-21-210827
+2026-03-29 15:28:45,701 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:45,702 [INFO] sec_collector: [8/19] MSFT | 8-K | 2021-06-17 | 0001193125-21-192783
+2026-03-29 15:28:46,306 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:46,306 [INFO] sec_collector: [9/19] MSFT | 8-K | 2021-03-17 | 0001193125-21-084239
+2026-03-29 15:28:46,909 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:46,909 [INFO] sec_collector: [10/19] MSFT | 8-K | 2021-03-02 | 0001193125-21-065751
+2026-03-29 15:28:47,463 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:47,464 [INFO] sec_collector: [11/19] GOOGL | 8-K | 2024-10-29 | 0001652044-24-000115
+2026-03-29 15:28:48,007 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:48,007 [INFO] sec_collector: [12/19] GOOGL | 8-K | 2024-09-24 | 0001652044-24-000097
+2026-03-29 15:28:48,677 [INFO] sec_collector:   ✓ 完成，文本长度 4,964 字符
+2026-03-29 15:28:48,677 [INFO] sec_collector: [13/19] GOOGL | 8-K | 2024-08-06 | 0001652044-24-000085
+2026-03-29 15:28:49,252 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:49,252 [INFO] sec_collector: [14/19] GOOGL | 8-K | 2024-07-23 | 0001652044-24-000076
+2026-03-29 15:28:49,806 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:49,806 [INFO] sec_collector: [15/19] GOOGL | 8-K | 2024-06-26 | 0001193125-24-168745
+2026-03-29 15:28:50,367 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:50,367 [INFO] sec_collector: [16/19] GOOGL | 8-K | 2024-04-25 | 0001652044-24-000047
+2026-03-29 15:28:51,406 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:51,406 [INFO] sec_collector: [17/19] GOOGL | 8-K | 2024-02-08 | 0001652044-24-000032
+2026-03-29 15:28:52,077 [INFO] sec_collector:   ✓ 完成，文本长度 5,185 字符
+2026-03-29 15:28:52,078 [INFO] sec_collector: [18/19] GOOGL | 8-K | 2023-04-20 | 0001652044-23-000034
+2026-03-29 15:28:52,620 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:52,620 [INFO] sec_collector: [19/19] GOOGL | 8-K | 2023-01-25 | 0001652044-23-000005
+2026-03-29 15:28:53,165 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:28:53,165 [INFO] sec_collector: 采集完毕，有效记录：2 条
+2026-03-29 15:28:53,165 [INFO] __main__: =======================================================
+2026-03-29 15:28:53,165 [INFO] __main__: Step 3 / 3  对齐公众数据并写入数据库
+2026-03-29 15:28:53,165 [INFO] __main__: =======================================================
+2026-03-29 15:28:53,165 [INFO] aligner: [对齐 1/2] GOOGL | 2024-09-24
+2026-03-29 15:28:54,961 [INFO] public_collector: [Finnhub] GOOGL @ 2024-09-24：获取 0 条新闻
+2026-03-29 15:29:12,561 [INFO] public_collector: [GDELT] Alphabet Inc. @ 2024-09-24：获取 9 条新闻
+2026-03-29 15:29:12,567 [INFO] public_collector: [聚合] GOOGL @ 2024-09-24：9 条，情绪均值 = 0.0598
+2026-03-29 15:29:12,568 [INFO] aligner:   官方文本：4,964 字符 | 公众新闻：9 条 | 情绪均值：0.0598 | 并购类型：unknown
+2026-03-29 15:29:12,568 [INFO] aligner: [对齐 2/2] GOOGL | 2024-02-08
+2026-03-29 15:29:14,374 [INFO] public_collector: [Finnhub] GOOGL @ 2024-02-08：获取 0 条新闻
+2026-03-29 15:29:36,522 [INFO] public_collector: [GDELT] Alphabet Inc. @ 2024-02-08：获取 15 条新闻
+2026-03-29 15:29:36,527 [INFO] public_collector: [聚合] GOOGL @ 2024-02-08：15 条，情绪均值 = -0.0107
+2026-03-29 15:29:36,530 [INFO] aligner:   官方文本：5,185 字符 | 公众新闻：15 条 | 情绪均值：-0.0107 | 并购类型：unknown
+2026-03-29 15:29:36,530 [INFO] aligner: 对齐完成，共 2 条记录写入数据库
+2026-03-29 15:29:36,552 [INFO] __main__: CSV 快照已保存：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.csv
+2026-03-29 15:35:49,938 [INFO] __main__: =======================================================
+2026-03-29 15:35:49,939 [INFO] __main__: Step 1 / 3  初始化数据库
+2026-03-29 15:35:49,939 [INFO] __main__: =======================================================
+2026-03-29 15:35:49,942 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 15:35:49,942 [INFO] __main__: =======================================================
+2026-03-29 15:35:49,942 [INFO] __main__: Step 2 / 3  采集 SEC EDGAR 文件
+2026-03-29 15:35:49,943 [INFO] __main__: =======================================================
+2026-03-29 15:35:49,943 [INFO] sec_collector: 精准模式：查询 2 个 ticker
+2026-03-29 15:35:49,943 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 15:35:51,029 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 15:35:51,799 [INFO] sec_collector: [MSFT] Submissions API：找到 14 份候选文件
+2026-03-29 15:35:52,334 [INFO] sec_collector: [GOOGL] Submissions API：找到 9 份候选文件
+2026-03-29 15:35:52,335 [INFO] sec_collector: 候选文件总数：19
+2026-03-29 15:35:52,335 [INFO] sec_collector: [1/19] MSFT | 8-K | 2024-12-03 | 0000950170-24-132722
+2026-03-29 15:35:53,503 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:35:53,503 [INFO] sec_collector: [2/19] MSFT | 8-K | 2023-11-06 | 0001193125-23-271376
+2026-03-29 15:35:54,042 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:35:54,042 [INFO] sec_collector: [3/19] MSFT | 8-K | 2023-10-30 | 0001193125-23-265616
+2026-03-29 15:35:55,104 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:35:55,105 [INFO] sec_collector: [4/19] MSFT | 8-K | 2023-10-16 | 0001104659-23-109428
+2026-03-29 15:35:56,134 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:35:56,134 [INFO] sec_collector: [5/19] MSFT | 8-K | 2023-10-13 | 0001193125-23-255762
+2026-03-29 15:35:56,705 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:35:56,705 [INFO] sec_collector: [6/19] MSFT | 8-K | 2023-10-11 | 0001193125-23-254151
+2026-03-29 15:35:57,944 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:35:57,945 [INFO] sec_collector: [7/19] MSFT | 8-K | 2021-07-08 | 0001193125-21-210827
+2026-03-29 15:35:59,156 [INFO] sec_collector:   ✓ 完成，文本长度 5,132 字符
+2026-03-29 15:35:59,156 [INFO] sec_collector: [8/19] MSFT | 8-K | 2021-06-17 | 0001193125-21-192783
+2026-03-29 15:35:59,782 [INFO] sec_collector:   ✓ 完成，文本长度 3,868 字符
+2026-03-29 15:35:59,782 [INFO] sec_collector: [9/19] MSFT | 8-K | 2021-03-17 | 0001193125-21-084239
+2026-03-29 15:36:00,918 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:36:00,918 [INFO] sec_collector: [10/19] MSFT | 8-K | 2021-03-02 | 0001193125-21-065751
+2026-03-29 15:36:02,555 [INFO] sec_collector:   ✓ 完成，文本长度 4,529 字符
+2026-03-29 15:36:02,556 [INFO] sec_collector: [11/19] GOOGL | 8-K | 2024-10-29 | 0001652044-24-000115
+2026-03-29 15:36:03,585 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:36:03,586 [INFO] sec_collector: [12/19] GOOGL | 8-K | 2024-09-24 | 0001652044-24-000097
+2026-03-29 15:36:04,816 [INFO] sec_collector:   ✓ 完成，文本长度 4,964 字符
+2026-03-29 15:36:04,816 [INFO] sec_collector: [13/19] GOOGL | 8-K | 2024-08-06 | 0001652044-24-000085
+2026-03-29 15:36:05,451 [INFO] sec_collector:   ✓ 完成，文本长度 3,827 字符
+2026-03-29 15:36:05,451 [INFO] sec_collector: [14/19] GOOGL | 8-K | 2024-07-23 | 0001652044-24-000076
+2026-03-29 15:36:06,541 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:36:06,541 [INFO] sec_collector: [15/19] GOOGL | 8-K | 2024-06-26 | 0001193125-24-168745
+2026-03-29 15:36:07,658 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:36:07,658 [INFO] sec_collector: [16/19] GOOGL | 8-K | 2024-04-25 | 0001652044-24-000047
+2026-03-29 15:36:08,751 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:36:08,751 [INFO] sec_collector: [17/19] GOOGL | 8-K | 2024-02-08 | 0001652044-24-000032
+2026-03-29 15:36:09,492 [INFO] sec_collector:   ✓ 完成，文本长度 5,185 字符
+2026-03-29 15:36:09,492 [INFO] sec_collector: [18/19] GOOGL | 8-K | 2023-04-20 | 0001652044-23-000034
+2026-03-29 15:36:10,849 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:36:10,849 [INFO] sec_collector: [19/19] GOOGL | 8-K | 2023-01-25 | 0001652044-23-000005
+2026-03-29 15:36:11,456 [INFO] sec_collector:   ✓ 完成，文本长度 3,875 字符
+2026-03-29 15:36:11,456 [INFO] sec_collector: 采集完毕，有效记录：7 条
+2026-03-29 15:36:11,456 [INFO] __main__: =======================================================
+2026-03-29 15:36:11,456 [INFO] __main__: Step 3 / 3  对齐公众数据并写入数据库
+2026-03-29 15:36:11,456 [INFO] __main__: =======================================================
+2026-03-29 15:36:11,456 [INFO] aligner: [对齐 1/7] MSFT | 2021-07-08
+2026-03-29 15:36:13,295 [INFO] public_collector: [Finnhub] MSFT @ 2021-07-08：获取 0 条新闻
+2026-03-29 15:36:38,508 [INFO] public_collector: [GDELT] MICROSOFT CORP @ 2021-07-08：获取 34 条新闻
+2026-03-29 15:36:38,512 [INFO] public_collector: [聚合] MSFT @ 2021-07-08：29 条，情绪均值 = 0.0243
+2026-03-29 15:36:38,514 [INFO] aligner:   官方文本：5,132 字符 | 公众新闻：29 条 | 情绪均值：0.0243 | 并购类型：unknown
+2026-03-29 15:36:38,514 [INFO] aligner: [对齐 2/7] MSFT | 2021-06-17
+2026-03-29 15:36:40,336 [INFO] public_collector: [Finnhub] MSFT @ 2021-06-17：获取 0 条新闻
+2026-03-29 15:36:56,043 [INFO] public_collector: [GDELT] MICROSOFT CORP @ 2021-06-17：获取 29 条新闻
+2026-03-29 15:36:56,048 [INFO] public_collector: [聚合] MSFT @ 2021-06-17：23 条，情绪均值 = 0.0788
+2026-03-29 15:36:56,050 [INFO] aligner:   官方文本：3,868 字符 | 公众新闻：23 条 | 情绪均值：0.0788 | 并购类型：unknown
+2026-03-29 15:36:56,050 [INFO] aligner: [对齐 3/7] MSFT | 2021-03-02
+2026-03-29 15:36:57,851 [INFO] public_collector: [Finnhub] MSFT @ 2021-03-02：获取 0 条新闻
+2026-03-29 15:37:05,101 [WARNING] public_collector: GDELT 请求失败 [MICROSOFT CORP] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22MICROSOFT+CORP%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20210301000000&enddatetime=20210309235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 15:37:24,045 [INFO] public_collector: [GDELT] MICROSOFT CORP @ 2021-03-02：获取 35 条新闻
+2026-03-29 15:37:24,049 [INFO] public_collector: [聚合] MSFT @ 2021-03-02：26 条，情绪均值 = 0.0142
+2026-03-29 15:37:24,050 [INFO] aligner:   官方文本：4,529 字符 | 公众新闻：26 条 | 情绪均值：0.0142 | 并购类型：unknown
+2026-03-29 15:37:24,050 [INFO] aligner: [对齐 4/7] GOOGL | 2024-09-24
+2026-03-29 15:37:25,867 [INFO] public_collector: [Finnhub] GOOGL @ 2024-09-24：获取 0 条新闻
+2026-03-29 15:37:33,362 [WARNING] public_collector: GDELT 请求失败 [Alphabet Inc.] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Alphabet+Inc.%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20240923000000&enddatetime=20241001235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 15:37:57,261 [INFO] public_collector: [GDELT] Alphabet Inc. @ 2024-09-24：获取 9 条新闻
+2026-03-29 15:37:57,263 [INFO] public_collector: [聚合] GOOGL @ 2024-09-24：9 条，情绪均值 = 0.0598
+2026-03-29 15:37:57,264 [INFO] aligner:   官方文本：4,964 字符 | 公众新闻：9 条 | 情绪均值：0.0598 | 并购类型：unknown
+2026-03-29 15:37:57,265 [INFO] aligner: [对齐 5/7] GOOGL | 2024-08-06
+2026-03-29 15:37:59,141 [INFO] public_collector: [Finnhub] GOOGL @ 2024-08-06：获取 0 条新闻
+2026-03-29 15:38:06,541 [WARNING] public_collector: GDELT 请求失败 [Alphabet Inc.] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Alphabet+Inc.%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20240805000000&enddatetime=20240813235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 15:38:30,538 [INFO] public_collector: [GDELT] Alphabet Inc. @ 2024-08-06：获取 6 条新闻
+2026-03-29 15:38:30,542 [INFO] public_collector: [聚合] GOOGL @ 2024-08-06：6 条，情绪均值 = -0.0946
+2026-03-29 15:38:30,543 [INFO] aligner:   官方文本：3,827 字符 | 公众新闻：6 条 | 情绪均值：-0.0946 | 并购类型：unknown
+2026-03-29 15:38:30,544 [INFO] aligner: [对齐 6/7] GOOGL | 2024-02-08
+2026-03-29 15:38:32,379 [INFO] public_collector: [Finnhub] GOOGL @ 2024-02-08：获取 0 条新闻
+2026-03-29 15:38:51,953 [INFO] public_collector: [GDELT] Alphabet Inc. @ 2024-02-08：获取 15 条新闻
+2026-03-29 15:38:51,956 [INFO] public_collector: [聚合] GOOGL @ 2024-02-08：15 条，情绪均值 = -0.0107
+2026-03-29 15:38:51,958 [INFO] aligner:   官方文本：5,185 字符 | 公众新闻：15 条 | 情绪均值：-0.0107 | 并购类型：unknown
+2026-03-29 15:38:51,958 [INFO] aligner: [对齐 7/7] GOOGL | 2023-01-25
+2026-03-29 15:38:53,747 [INFO] public_collector: [Finnhub] GOOGL @ 2023-01-25：获取 0 条新闻
+2026-03-29 15:39:11,464 [INFO] public_collector: [GDELT] Alphabet Inc. @ 2023-01-25：获取 250 条新闻
+2026-03-29 15:39:11,466 [INFO] public_collector: [聚合] GOOGL @ 2023-01-25：110 条，情绪均值 = 0.1764
+2026-03-29 15:39:11,467 [INFO] aligner:   官方文本：3,875 字符 | 公众新闻：110 条 | 情绪均值：0.1764 | 并购类型：unknown
+2026-03-29 15:39:11,467 [INFO] aligner: 对齐完成，共 7 条记录写入数据库
+2026-03-29 15:39:11,473 [INFO] __main__: CSV 快照已保存：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.csv
+2026-03-29 15:42:23,917 [INFO] __main__: =======================================================
+2026-03-29 15:42:23,917 [INFO] __main__: Step 1 / 3  初始化数据库
+2026-03-29 15:42:23,917 [INFO] __main__: =======================================================
+2026-03-29 15:42:23,919 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 15:42:23,919 [INFO] __main__: =======================================================
+2026-03-29 15:42:23,919 [INFO] __main__: Step 2 / 3  采集 SEC EDGAR 文件
+2026-03-29 15:42:23,919 [INFO] __main__: =======================================================
+2026-03-29 15:42:23,919 [INFO] sec_collector: 精准模式：查询 5 个 ticker
+2026-03-29 15:42:23,919 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 15:42:24,823 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 15:42:25,687 [INFO] sec_collector: [MSFT] Submissions API：找到 14 份候选文件
+2026-03-29 15:42:26,230 [INFO] sec_collector: [GOOGL] Submissions API：找到 9 份候选文件
+2026-03-29 15:42:26,844 [INFO] sec_collector: [AMZN] Submissions API：找到 9 份候选文件
+2026-03-29 15:42:27,370 [INFO] sec_collector: [META] Submissions API：找到 1 份候选文件
+2026-03-29 15:42:27,974 [INFO] sec_collector: [NVDA] Submissions API：找到 12 份候选文件
+2026-03-29 15:42:27,975 [INFO] sec_collector: 候选文件总数：39
+2026-03-29 15:42:27,975 [INFO] sec_collector: [1/39] MSFT | 8-K | 2024-12-03 | 0000950170-24-132722
+2026-03-29 15:42:28,949 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:28,950 [INFO] sec_collector: [2/39] MSFT | 8-K | 2023-11-06 | 0001193125-23-271376
+2026-03-29 15:42:29,473 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:29,473 [INFO] sec_collector: [3/39] MSFT | 8-K | 2023-10-30 | 0001193125-23-265616
+2026-03-29 15:42:30,446 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:30,446 [INFO] sec_collector: [4/39] MSFT | 8-K | 2023-10-16 | 0001104659-23-109428
+2026-03-29 15:42:31,258 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:31,258 [INFO] sec_collector: [5/39] MSFT | 8-K | 2023-10-13 | 0001193125-23-255762
+2026-03-29 15:42:31,779 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:31,779 [INFO] sec_collector: [6/39] MSFT | 8-K | 2023-10-11 | 0001193125-23-254151
+2026-03-29 15:42:32,593 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:32,593 [INFO] sec_collector: [7/39] MSFT | 8-K | 2021-07-08 | 0001193125-21-210827
+2026-03-29 15:42:32,594 [INFO] sec_collector:   已在库中，跳过
+2026-03-29 15:42:32,594 [INFO] sec_collector: [8/39] MSFT | 8-K | 2021-06-17 | 0001193125-21-192783
+2026-03-29 15:42:32,594 [INFO] sec_collector:   已在库中，跳过
+2026-03-29 15:42:32,594 [INFO] sec_collector: [9/39] MSFT | 8-K | 2021-03-17 | 0001193125-21-084239
+2026-03-29 15:42:33,448 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:33,448 [INFO] sec_collector: [10/39] MSFT | 8-K | 2021-03-02 | 0001193125-21-065751
+2026-03-29 15:42:33,448 [INFO] sec_collector:   已在库中，跳过
+2026-03-29 15:42:33,448 [INFO] sec_collector: [11/39] GOOGL | 8-K | 2024-10-29 | 0001652044-24-000115
+2026-03-29 15:42:34,307 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:34,307 [INFO] sec_collector: [12/39] GOOGL | 8-K | 2024-09-24 | 0001652044-24-000097
+2026-03-29 15:42:34,308 [INFO] sec_collector:   已在库中，跳过
+2026-03-29 15:42:34,308 [INFO] sec_collector: [13/39] GOOGL | 8-K | 2024-08-06 | 0001652044-24-000085
+2026-03-29 15:42:34,308 [INFO] sec_collector:   已在库中，跳过
+2026-03-29 15:42:34,308 [INFO] sec_collector: [14/39] GOOGL | 8-K | 2024-07-23 | 0001652044-24-000076
+2026-03-29 15:42:35,123 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:35,124 [INFO] sec_collector: [15/39] GOOGL | 8-K | 2024-06-26 | 0001193125-24-168745
+2026-03-29 15:42:35,924 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:35,924 [INFO] sec_collector: [16/39] GOOGL | 8-K | 2024-04-25 | 0001652044-24-000047
+2026-03-29 15:42:36,713 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:36,713 [INFO] sec_collector: [17/39] GOOGL | 8-K | 2024-02-08 | 0001652044-24-000032
+2026-03-29 15:42:36,714 [INFO] sec_collector:   已在库中，跳过
+2026-03-29 15:42:36,714 [INFO] sec_collector: [18/39] GOOGL | 8-K | 2023-04-20 | 0001652044-23-000034
+2026-03-29 15:42:37,505 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:37,505 [INFO] sec_collector: [19/39] GOOGL | 8-K | 2023-01-25 | 0001652044-23-000005
+2026-03-29 15:42:37,507 [INFO] sec_collector:   已在库中，跳过
+2026-03-29 15:42:37,507 [INFO] sec_collector: [20/39] AMZN | 8-K | 2023-11-01 | 0001104659-23-113444
+2026-03-29 15:42:38,455 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:38,455 [INFO] sec_collector: [21/39] AMZN | 8-K | 2023-01-03 | 0001193125-23-000849
+2026-03-29 15:42:39,548 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:39,549 [INFO] sec_collector: [22/39] AMZN | 8-K | 2022-12-01 | 0001193125-22-296602
+2026-03-29 15:42:40,768 [INFO] sec_collector:   ✓ 完成，文本长度 7,748 字符
+2026-03-29 15:42:40,768 [INFO] sec_collector: [23/39] AMZN | 8-K | 2022-11-18 | 0001193125-22-289041
+2026-03-29 15:42:41,837 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:41,837 [INFO] sec_collector: [24/39] AMZN | 8-K | 2022-04-13 | 0001193125-22-104336
+2026-03-29 15:42:42,945 [INFO] sec_collector:   ✓ 完成，文本长度 8,235 字符
+2026-03-29 15:42:42,945 [INFO] sec_collector: [25/39] AMZN | 8-K | 2022-03-09 | 0001018724-22-000009
+2026-03-29 15:42:44,100 [INFO] sec_collector:   ✓ 完成，文本长度 5,173 字符
+2026-03-29 15:42:44,100 [INFO] sec_collector: [26/39] AMZN | 8-K | 2021-05-12 | 0001193125-21-159084
+2026-03-29 15:42:45,269 [INFO] sec_collector:   ✓ 完成，文本长度 8,994 字符
+2026-03-29 15:42:45,269 [INFO] sec_collector: [27/39] AMZN | 8-K | 2020-06-23 | 0001193125-20-176528
+2026-03-29 15:42:46,290 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:46,290 [INFO] sec_collector: [28/39] AMZN | 8-K | 2020-06-03 | 0001193125-20-159531
+2026-03-29 15:42:47,438 [INFO] sec_collector:   ✓ 完成，文本长度 8,667 字符
+2026-03-29 15:42:47,438 [INFO] sec_collector: [29/39] META | 8-K | 2024-08-09 | 0001193125-24-197873
+2026-03-29 15:42:48,506 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:48,506 [INFO] sec_collector: [30/39] NVDA | 8-K | 2024-05-22 | 0001045810-24-000113
+2026-03-29 15:42:50,532 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:50,532 [INFO] sec_collector: [31/39] NVDA | 8-K | 2023-10-24 | 0001045810-23-000221
+2026-03-29 15:42:51,560 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:51,560 [INFO] sec_collector: [32/39] NVDA | 8-K | 2023-10-17 | 0001045810-23-000217
+2026-03-29 15:42:52,578 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:52,579 [INFO] sec_collector: [33/39] NVDA | 8-K | 2022-09-01 | 0001045810-22-000151
+2026-03-29 15:42:53,616 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:53,617 [INFO] sec_collector: [34/39] NVDA | 8-K | 2022-08-31 | 0001045810-22-000146
+2026-03-29 15:42:54,370 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:54,370 [INFO] sec_collector: [35/39] NVDA | 8-K | 2021-06-28 | 0001045810-21-000117
+2026-03-29 15:42:55,444 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:55,444 [INFO] sec_collector: [36/39] NVDA | 8-K | 2021-06-16 | 0001193125-21-192149
+2026-03-29 15:42:56,551 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:42:56,551 [INFO] sec_collector: [37/39] NVDA | 8-K | 2021-05-21 | 0001045810-21-000056
+2026-03-29 15:42:58,101 [INFO] sec_collector:   ✓ 完成，文本长度 3,963 字符
+2026-03-29 15:42:58,101 [INFO] sec_collector: [38/39] NVDA | 8-K | 2020-09-14 | 0001193125-20-244601
+2026-03-29 15:43:00,009 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:43:00,010 [INFO] sec_collector: [39/39] NVDA | 8-K | 2020-04-27 | 0001045810-20-000052
+2026-03-29 15:43:01,019 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:43:01,019 [INFO] sec_collector: 采集完毕，有效记录：6 条
+2026-03-29 15:43:01,019 [INFO] __main__: =======================================================
+2026-03-29 15:43:01,019 [INFO] __main__: Step 3 / 3  对齐公众数据并写入数据库
+2026-03-29 15:43:01,019 [INFO] __main__: =======================================================
+2026-03-29 15:43:01,019 [INFO] aligner: [对齐 1/6] AMZN | 2022-12-01
+2026-03-29 15:43:02,828 [INFO] public_collector: [Finnhub] AMZN @ 2022-12-01：获取 0 条新闻
+2026-03-29 15:43:04,069 [WARNING] public_collector: GDELT 限速，等待 15s 后重试…
+2026-03-29 15:43:20,071 [WARNING] public_collector: GDELT 限速，等待 30s 后重试…
+2026-03-29 15:43:50,935 [WARNING] public_collector: GDELT 限速，等待 45s 后重试…
+2026-03-29 15:44:35,942 [INFO] aligner:   官方文本：7,748 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 15:44:35,943 [INFO] aligner: [对齐 2/6] AMZN | 2022-04-13
+2026-03-29 15:44:37,687 [INFO] public_collector: [Finnhub] AMZN @ 2022-04-13：获取 0 条新闻
+2026-03-29 15:44:38,443 [WARNING] public_collector: GDELT 限速，等待 15s 后重试…
+2026-03-29 15:44:54,371 [WARNING] public_collector: GDELT 限速，等待 30s 后重试…
+2026-03-29 15:45:26,457 [WARNING] public_collector: GDELT 限速，等待 45s 后重试…
+2026-03-29 15:46:11,463 [INFO] aligner:   官方文本：8,235 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 15:46:11,463 [INFO] aligner: [对齐 3/6] AMZN | 2022-03-09
+2026-03-29 15:46:13,329 [INFO] public_collector: [Finnhub] AMZN @ 2022-03-09：获取 0 条新闻
+2026-03-29 15:46:14,655 [WARNING] public_collector: GDELT 限速，等待 15s 后重试…
+2026-03-29 15:46:30,759 [WARNING] public_collector: GDELT 限速，等待 30s 后重试…
+2026-03-29 15:47:03,009 [WARNING] public_collector: GDELT 限速，等待 45s 后重试…
+2026-03-29 15:47:48,018 [INFO] aligner:   官方文本：5,173 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 15:47:48,018 [INFO] aligner: [对齐 4/6] AMZN | 2021-05-12
+2026-03-29 15:47:49,891 [INFO] public_collector: [Finnhub] AMZN @ 2021-05-12：获取 0 条新闻
+2026-03-29 15:47:58,484 [INFO] public_collector: [GDELT] AMAZON COM INC @ 2021-05-12：获取 114 条新闻
+2026-03-29 15:47:58,488 [INFO] public_collector: [聚合] AMZN @ 2021-05-12：50 条，情绪均值 = 0.1643
+2026-03-29 15:47:58,489 [INFO] aligner:   官方文本：8,994 字符 | 公众新闻：50 条 | 情绪均值：0.1643 | 并购类型：unknown
+2026-03-29 15:47:58,490 [INFO] aligner: [对齐 5/6] AMZN | 2020-06-03
+2026-03-29 15:48:00,251 [INFO] public_collector: [Finnhub] AMZN @ 2020-06-03：获取 0 条新闻
+2026-03-29 15:48:01,551 [WARNING] public_collector: GDELT 限速，等待 15s 后重试…
+2026-03-29 15:48:17,974 [WARNING] public_collector: GDELT 限速，等待 30s 后重试…
+2026-03-29 15:48:48,711 [WARNING] public_collector: GDELT 限速，等待 45s 后重试…
+2026-03-29 15:49:33,720 [INFO] aligner:   官方文本：8,667 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 15:49:33,721 [INFO] aligner: [对齐 6/6] NVDA | 2021-05-21
+2026-03-29 15:49:35,566 [INFO] public_collector: [Finnhub] NVDA @ 2021-05-21：获取 0 条新闻
+2026-03-29 15:49:36,828 [WARNING] public_collector: GDELT 限速，等待 15s 后重试…
+2026-03-29 15:49:53,410 [WARNING] public_collector: GDELT 限速，等待 30s 后重试…
+2026-03-29 15:50:31,953 [INFO] public_collector: [GDELT] NVIDIA CORP @ 2021-05-21：获取 9 条新闻
+2026-03-29 15:50:31,959 [INFO] public_collector: [聚合] NVDA @ 2021-05-21：8 条，情绪均值 = 0.0185
+2026-03-29 15:50:31,961 [INFO] aligner:   官方文本：3,963 字符 | 公众新闻：8 条 | 情绪均值：0.0185 | 并购类型：unknown
+2026-03-29 15:50:31,961 [INFO] aligner: 对齐完成，共 6 条记录写入数据库
+2026-03-29 15:50:31,992 [INFO] __main__: CSV 快照已保存：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.csv
+2026-03-29 15:55:12,432 [INFO] __main__: =======================================================
+2026-03-29 15:55:12,432 [INFO] __main__: Step 1 / 3  初始化数据库
+2026-03-29 15:55:12,432 [INFO] __main__: =======================================================
+2026-03-29 15:55:12,434 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 15:55:12,434 [INFO] __main__: =======================================================
+2026-03-29 15:55:12,434 [INFO] __main__: Step 2 / 3  采集 SEC EDGAR 文件
+2026-03-29 15:55:12,434 [INFO] __main__: =======================================================
+2026-03-29 15:55:12,434 [INFO] sec_collector: 精准模式：查询 4 个 ticker
+2026-03-29 15:55:12,434 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 15:55:13,391 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 15:55:14,161 [INFO] sec_collector: [ADBE] Submissions API：找到 13 份候选文件
+2026-03-29 15:55:14,676 [INFO] sec_collector: [CRM] Submissions API：找到 2 份候选文件
+2026-03-29 15:55:14,676 [WARNING] sec_collector: 找不到 ATVI 的 CIK，跳过
+2026-03-29 15:55:14,677 [WARNING] sec_collector: 找不到 VMW 的 CIK，跳过
+2026-03-29 15:55:14,677 [INFO] sec_collector: 候选文件总数：12
+2026-03-29 15:55:14,677 [INFO] sec_collector: [1/12] ADBE | 8-K | 2024-04-04 | 0001193125-24-087244
+2026-03-29 15:55:15,771 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:55:15,771 [INFO] sec_collector: [2/12] ADBE | 8-K | 2024-03-14 | 0000796343-24-000057
+2026-03-29 15:55:17,921 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:55:17,922 [INFO] sec_collector: [3/12] ADBE | 8-K | 2023-12-18 | 0000796343-23-000254
+2026-03-29 15:55:19,401 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:55:19,401 [INFO] sec_collector: [4/12] ADBE | 8-K | 2023-12-13 | 0000796343-23-000252
+2026-03-29 15:55:20,837 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:55:20,837 [INFO] sec_collector: [5/12] ADBE | 8-K | 2023-09-14 | 0000796343-23-000198
+2026-03-29 15:55:22,320 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:55:22,320 [INFO] sec_collector: [6/12] ADBE | 8-K | 2023-01-19 | 0001193125-23-010953
+2026-03-29 15:55:23,278 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:55:23,278 [INFO] sec_collector: [7/12] ADBE | 8-K | 2022-09-15 | 0001140361-22-033412
+2026-03-29 15:55:26,624 [INFO] sec_collector:   ✓ 完成，文本长度 357,145 字符
+2026-03-29 15:55:26,624 [INFO] sec_collector: [8/12] ADBE | 8-K | 2022-07-01 | 0001193125-22-186450
+2026-03-29 15:55:27,634 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:55:27,634 [INFO] sec_collector: [9/12] ADBE | 8-K | 2022-03-17 | 0000796343-22-000085
+2026-03-29 15:55:29,306 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:55:29,306 [INFO] sec_collector: [10/12] ADBE | 8-K | 2021-05-28 | 0000796343-21-000128
+2026-03-29 15:55:32,116 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:55:32,117 [INFO] sec_collector: [11/12] CRM | 8-K | 2024-11-05 | 0001193125-24-251243
+2026-03-29 15:55:33,115 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:55:33,115 [INFO] sec_collector: [12/12] CRM | 8-K | 2024-02-28 | 0001108524-24-000002
+2026-03-29 15:55:34,660 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 15:55:34,660 [INFO] sec_collector: 采集完毕，有效记录：1 条
+2026-03-29 15:55:34,660 [INFO] __main__: =======================================================
+2026-03-29 15:55:34,660 [INFO] __main__: Step 3 / 3  对齐公众数据并写入数据库
+2026-03-29 15:55:34,660 [INFO] __main__: =======================================================
+2026-03-29 15:55:34,661 [INFO] aligner: [对齐 1/1] ADBE | 2022-09-15
+2026-03-29 15:55:36,425 [INFO] public_collector: [Finnhub] ADBE @ 2022-09-15：获取 0 条新闻
+2026-03-29 15:55:37,512 [WARNING] public_collector: GDELT 限速，等待 30s 后重试…
+2026-03-29 15:56:19,128 [INFO] public_collector: [GDELT] ADOBE INC. @ 2022-09-15：获取 57 条新闻
+2026-03-29 15:56:19,132 [INFO] public_collector: [聚合] ADBE @ 2022-09-15：46 条，情绪均值 = -0.0414
+2026-03-29 15:56:19,136 [INFO] aligner:   官方文本：357,145 字符 | 公众新闻：46 条 | 情绪均值：-0.0414 | 并购类型：unknown
+2026-03-29 15:56:19,136 [INFO] aligner: 对齐完成，共 1 条记录写入数据库
+2026-03-29 15:56:19,159 [INFO] __main__: CSV 快照已保存：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.csv
+2026-03-29 16:06:14,124 [INFO] __main__: =======================================================
+2026-03-29 16:06:14,125 [INFO] __main__: Step 1 / 3  初始化数据库
+2026-03-29 16:06:14,125 [INFO] __main__: =======================================================
+2026-03-29 16:06:14,125 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 16:06:14,125 [INFO] __main__: =======================================================
+2026-03-29 16:06:14,125 [INFO] __main__: Step 2 / 3  采集 SEC EDGAR 文件
+2026-03-29 16:06:14,125 [INFO] __main__: =======================================================
+2026-03-29 16:06:14,125 [INFO] sec_collector: 精准模式：查询 5 个 ticker
+2026-03-29 16:06:14,125 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 16:06:15,092 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 16:06:15,893 [INFO] sec_collector: [ADBE] Submissions API：找到 13 份候选文件
+2026-03-29 16:06:16,477 [INFO] sec_collector: [ATVI] Submissions API：找到 16 份候选文件
+2026-03-29 16:06:17,059 [INFO] sec_collector: [VMW] Submissions API：找到 17 份候选文件
+2026-03-29 16:06:17,584 [INFO] sec_collector: [CTXS] Submissions API：找到 20 份候选文件
+2026-03-29 16:06:18,211 [INFO] sec_collector: [XLNX] Submissions API：找到 7 份候选文件
+2026-03-29 16:06:18,212 [INFO] sec_collector: 候选文件总数：47
+2026-03-29 16:06:18,212 [INFO] sec_collector: [1/47] ADBE | 8-K | 2024-04-04 | 0001193125-24-087244
+2026-03-29 16:06:18,816 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:18,816 [INFO] sec_collector: [2/47] ADBE | 8-K | 2024-03-14 | 0000796343-24-000057
+2026-03-29 16:06:19,972 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:19,973 [INFO] sec_collector: [3/47] ADBE | 8-K | 2023-12-18 | 0000796343-23-000254
+2026-03-29 16:06:20,870 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:20,870 [INFO] sec_collector: [4/47] ADBE | 8-K | 2023-12-13 | 0000796343-23-000252
+2026-03-29 16:06:21,687 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:21,687 [INFO] sec_collector: [5/47] ADBE | 8-K | 2023-09-14 | 0000796343-23-000198
+2026-03-29 16:06:22,490 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:22,490 [INFO] sec_collector: [6/47] ADBE | 8-K | 2023-01-19 | 0001193125-23-010953
+2026-03-29 16:06:23,027 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:23,028 [INFO] sec_collector: [7/47] ADBE | 8-K | 2022-09-15 | 0001140361-22-033412
+2026-03-29 16:06:24,234 [INFO] sec_collector:   文本截断至 30,000 字符
+2026-03-29 16:06:24,656 [INFO] sec_collector:   ✓ 完成，文本长度 30,000 字符
+2026-03-29 16:06:24,656 [INFO] sec_collector: [8/47] ADBE | 8-K | 2022-07-01 | 0001193125-22-186450
+2026-03-29 16:06:25,195 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:25,195 [INFO] sec_collector: [9/47] ADBE | 8-K | 2022-03-17 | 0000796343-22-000085
+2026-03-29 16:06:26,006 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:26,006 [INFO] sec_collector: [10/47] ADBE | 8-K | 2021-05-28 | 0000796343-21-000128
+2026-03-29 16:06:26,800 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:26,801 [INFO] sec_collector: [11/47] ATVI | 8-K | 2023-10-16 | 0001104659-23-109427
+2026-03-29 16:06:28,715 [INFO] sec_collector:   ✓ 完成，文本长度 2,141 字符
+2026-03-29 16:06:28,716 [INFO] sec_collector: [12/47] ATVI | 8-K | 2023-10-13 | 0001104659-23-108985
+2026-03-29 16:06:29,906 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:29,906 [INFO] sec_collector: [13/47] ATVI | 8-K | 2023-07-19 | 0001628280-23-025102
+2026-03-29 16:06:30,980 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:30,980 [INFO] sec_collector: [14/47] ATVI | 8-K | 2023-07-19 | 0001104659-23-082205
+2026-03-29 16:06:31,933 [INFO] sec_collector:   ✓ 完成，文本长度 14,604 字符
+2026-03-29 16:06:31,934 [INFO] sec_collector: [15/47] ATVI | 8-K | 2022-11-18 | 0001628280-22-030443
+2026-03-29 16:06:33,175 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:33,176 [INFO] sec_collector: [16/47] ATVI | 8-K | 2022-11-17 | 0001628280-22-030229
+2026-03-29 16:06:34,406 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:34,407 [INFO] sec_collector: [17/47] ATVI | 8-K | 2022-06-16 | 0001104659-22-071603
+2026-03-29 16:06:35,785 [INFO] sec_collector:   ✓ 完成，文本长度 18,618 字符
+2026-03-29 16:06:35,785 [INFO] sec_collector: [18/47] ATVI | 8-K | 2022-04-28 | 0001104659-22-052250
+2026-03-29 16:06:37,605 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:37,605 [INFO] sec_collector: [19/47] ATVI | 8-K | 2022-04-15 | 0001104659-22-046544
+2026-03-29 16:06:38,635 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:38,635 [INFO] sec_collector: [20/47] ATVI | 8-K | 2022-03-30 | 0001104659-22-040197
+2026-03-29 16:06:50,257 [WARNING] sec_collector: 请求失败 (第 1/3 次): 503 Server Error: Service Unavailable for url: https://www.sec.gov/Archives/edgar/data/718877/000110465922040197/tm2210789d1_ex99-1.htm
+2026-03-29 16:06:52,007 [INFO] sec_collector:   ✓ 完成，文本长度 4,416 字符
+2026-03-29 16:06:52,007 [INFO] sec_collector: [21/47] VMW | 8-K | 2023-11-22 | 0001193125-23-282097
+2026-03-29 16:06:53,151 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:53,151 [INFO] sec_collector: [22/47] VMW | 8-K | 2023-10-30 | 0001193125-23-266257
+2026-03-29 16:06:54,886 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:54,886 [INFO] sec_collector: [23/47] VMW | 8-K | 2023-10-18 | 0001193125-23-258493
+2026-03-29 16:06:56,320 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:56,320 [INFO] sec_collector: [24/47] VMW | 8-K | 2023-08-23 | 0001124610-23-000055
+2026-03-29 16:06:57,618 [INFO] sec_collector:   ✓ 完成，文本长度 5,183 字符
+2026-03-29 16:06:57,618 [INFO] sec_collector: [25/47] VMW | 8-K | 2023-05-19 | 0001124610-23-000023
+2026-03-29 16:06:58,806 [INFO] sec_collector:   ✓ 完成，文本长度 5,613 字符
+2026-03-29 16:06:58,807 [INFO] sec_collector: [26/47] VMW | 8-K | 2023-02-17 | 0001124610-23-000004
+2026-03-29 16:06:59,902 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:06:59,902 [INFO] sec_collector: [27/47] VMW | 8-K | 2022-10-28 | 0001193125-22-272604
+2026-03-29 16:07:01,131 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:07:01,131 [INFO] sec_collector: [28/47] VMW | 8-K | 2022-05-26 | 0001193125-22-161168
+2026-03-29 16:07:03,606 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:07:03,606 [INFO] sec_collector: [29/47] VMW | 8-K | 2021-11-01 | 0001193125-21-315510
+2026-03-29 16:07:33,731 [WARNING] sec_collector: 请求失败 (第 1/3 次): HTTPSConnectionPool(host='www.sec.gov', port=443): Read timed out. (read timeout=30)
+2026-03-29 16:07:36,973 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:07:36,973 [INFO] sec_collector: [30/47] VMW | 8-K | 2021-10-19 | 0001124610-21-000059
+2026-03-29 16:07:38,709 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:07:38,710 [INFO] sec_collector: [31/47] CTXS | 8-K | 2022-10-03 | 0001193125-22-256805
+2026-03-29 16:07:39,788 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:07:39,789 [INFO] sec_collector: [32/47] CTXS | 8-K | 2022-09-22 | 0001193125-22-248803
+2026-03-29 16:07:40,903 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:07:40,904 [INFO] sec_collector: [33/47] CTXS | 8-K | 2022-09-07 | 0001193125-22-239627
+2026-03-29 16:07:42,505 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:07:42,505 [INFO] sec_collector: [34/47] CTXS | 8-K | 2022-08-29 | 0001193125-22-232797
+2026-03-29 16:08:12,633 [WARNING] sec_collector: 请求失败 (第 1/3 次): HTTPSConnectionPool(host='www.sec.gov', port=443): Read timed out. (read timeout=30)
+2026-03-29 16:08:15,065 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:08:15,066 [INFO] sec_collector: [35/47] CTXS | 8-K | 2022-04-22 | 0001193125-22-114211
+2026-03-29 16:08:16,759 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:08:16,759 [INFO] sec_collector: [36/47] CTXS | 8-K | 2022-04-13 | 0001193125-22-104467
+2026-03-29 16:08:17,992 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:08:17,992 [INFO] sec_collector: [37/47] CTXS | 8-K | 2022-01-31 | 0001193125-22-023498
+2026-03-29 16:08:20,497 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:08:20,497 [INFO] sec_collector: [38/47] CTXS | 8-K | 2021-11-04 | 0001193125-21-319281
+2026-03-29 16:08:22,137 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:08:22,137 [INFO] sec_collector: [39/47] CTXS | 8-K | 2021-07-29 | 0001193125-21-228138
+2026-03-29 16:08:52,267 [WARNING] sec_collector: 请求失败 (第 1/3 次): HTTPSConnectionPool(host='www.sec.gov', port=443): Read timed out. (read timeout=30)
+2026-03-29 16:09:03,994 [WARNING] sec_collector: 请求失败 (第 2/3 次): 503 Server Error: Service Unavailable for url: https://www.sec.gov/Archives/edgar/data/877890/000119312521228138/0001193125-21-228138-index.htm
+2026-03-29 16:09:08,212 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:09:08,213 [INFO] sec_collector: [40/47] CTXS | 8-K | 2021-04-29 | 0001193125-21-138291
+2026-03-29 16:09:10,097 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:09:10,097 [INFO] sec_collector: [41/47] XLNX | 8-K | 2021-08-26 | 0001193125-21-257603
+2026-03-29 16:09:11,195 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:09:11,196 [INFO] sec_collector: [42/47] XLNX | 8-K | 2021-08-23 | 0001193125-21-254082
+2026-03-29 16:09:13,022 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:09:13,022 [INFO] sec_collector: [43/47] XLNX | 8-K | 2020-10-08 | 0001193125-20-266435
+2026-03-29 16:09:23,496 [WARNING] sec_collector: 请求失败 (第 1/3 次): 503 Server Error: Service Unavailable for url: https://www.sec.gov/Archives/edgar/data/743316/000119312520266435/0001193125-20-266435-index.htm
+2026-03-29 16:09:35,637 [WARNING] sec_collector: 请求失败 (第 1/3 次): 503 Server Error: Service Unavailable for url: https://www.sec.gov/Archives/edgar/data/743316/000119312520266435/d62813d8k.htm
+2026-03-29 16:09:38,109 [INFO] sec_collector:   ✓ 完成，文本长度 6,168 字符
+2026-03-29 16:09:38,109 [INFO] sec_collector: [44/47] XLNX | 8-K | 2020-09-30 | 0001193125-20-259898
+2026-03-29 16:09:39,573 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:09:39,573 [INFO] sec_collector: [45/47] XLNX | 8-K | 2020-09-29 | 0001193125-20-257265
+2026-03-29 16:09:40,674 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:09:40,675 [INFO] sec_collector: [46/47] XLNX | 8-K | 2020-08-24 | 0001193125-20-228517
+2026-03-29 16:09:51,713 [WARNING] sec_collector: 请求失败 (第 1/3 次): 503 Server Error: Service Unavailable for url: https://www.sec.gov/Archives/edgar/data/743316/000119312520228517/d936478d8k.htm
+2026-03-29 16:09:53,476 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:09:53,476 [INFO] sec_collector: [47/47] XLNX | 8-K | 2020-07-13 | 0001193125-20-191603
+2026-03-29 16:09:55,937 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 16:09:55,937 [INFO] sec_collector: 采集完毕，有效记录：8 条
+2026-03-29 16:09:55,937 [INFO] __main__: =======================================================
+2026-03-29 16:09:55,937 [INFO] __main__: Step 3 / 3  对齐公众数据并写入数据库
+2026-03-29 16:09:55,937 [INFO] __main__: =======================================================
+2026-03-29 16:09:55,937 [INFO] aligner: [对齐 1/8] ADBE | 2022-09-15
+2026-03-29 16:09:57,839 [INFO] public_collector: [Finnhub] ADBE @ 2022-09-15：获取 0 条新闻
+2026-03-29 16:10:05,094 [WARNING] public_collector: GDELT 请求失败 [ADOBE INC.] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22ADOBE+INC.%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220914000000&enddatetime=20220922235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 16:10:44,311 [INFO] public_collector: [GDELT] ADOBE INC. @ 2022-09-15：获取 57 条新闻
+2026-03-29 16:10:44,313 [INFO] public_collector: [聚合] ADBE @ 2022-09-15：46 条，情绪均值 = -0.0414
+2026-03-29 16:10:44,315 [INFO] aligner:   官方文本：30,000 字符 | 公众新闻：46 条 | 情绪均值：-0.0414 | 并购类型：unknown
+2026-03-29 16:10:44,315 [INFO] aligner: [对齐 2/8] ATVI | 2023-10-16
+2026-03-29 16:10:48,759 [INFO] public_collector: [Finnhub] ATVI @ 2023-10-16：获取 0 条新闻
+2026-03-29 16:10:56,123 [WARNING] public_collector: GDELT 请求失败 [Activision Blizzard, Inc.] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Activision+Blizzard%2C+Inc.%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20231015000000&enddatetime=20231023235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 16:11:30,450 [INFO] public_collector: [GDELT] Activision Blizzard, Inc. @ 2023-10-16：获取 11 条新闻
+2026-03-29 16:11:30,454 [INFO] public_collector: [聚合] ATVI @ 2023-10-16：11 条，情绪均值 = 0.2426
+2026-03-29 16:11:30,455 [INFO] aligner:   官方文本：2,141 字符 | 公众新闻：11 条 | 情绪均值：0.2426 | 并购类型：unknown
+2026-03-29 16:11:30,455 [INFO] aligner: [对齐 3/8] ATVI | 2023-07-19
+2026-03-29 16:11:32,215 [INFO] public_collector: [Finnhub] ATVI @ 2023-07-19：获取 0 条新闻
+2026-03-29 16:11:39,560 [WARNING] public_collector: GDELT 请求失败 [Activision Blizzard, Inc.] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Activision+Blizzard%2C+Inc.%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20230718000000&enddatetime=20230726235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 16:12:17,249 [INFO] public_collector: [GDELT] Activision Blizzard, Inc. @ 2023-07-19：获取 36 条新闻
+2026-03-29 16:12:17,253 [INFO] public_collector: [聚合] ATVI @ 2023-07-19：32 条，情绪均值 = 0.1461
+2026-03-29 16:12:17,254 [INFO] aligner:   官方文本：14,604 字符 | 公众新闻：32 条 | 情绪均值：0.1461 | 并购类型：unknown
+2026-03-29 16:12:17,254 [INFO] aligner: [对齐 4/8] ATVI | 2022-06-16
+2026-03-29 16:12:19,166 [INFO] public_collector: [Finnhub] ATVI @ 2022-06-16：获取 0 条新闻
+2026-03-29 16:12:26,875 [WARNING] public_collector: GDELT 限速，等待 30s 后重试…
+2026-03-29 16:13:04,127 [WARNING] public_collector: GDELT 请求失败 [Activision Blizzard, Inc.] 第2次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Activision+Blizzard%2C+Inc.%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220615000000&enddatetime=20220623235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 16:13:38,898 [INFO] public_collector: [GDELT] Activision Blizzard, Inc. @ 2022-06-16：获取 6 条新闻
+2026-03-29 16:13:38,900 [INFO] public_collector: [聚合] ATVI @ 2022-06-16：6 条，情绪均值 = -0.0311
+2026-03-29 16:13:38,901 [INFO] aligner:   官方文本：18,618 字符 | 公众新闻：6 条 | 情绪均值：-0.0311 | 并购类型：unknown
+2026-03-29 16:13:38,901 [INFO] aligner: [对齐 5/8] ATVI | 2022-03-30
+2026-03-29 16:13:40,719 [INFO] public_collector: [Finnhub] ATVI @ 2022-03-30：获取 0 条新闻
+2026-03-29 16:14:05,592 [INFO] public_collector: [GDELT] Activision Blizzard, Inc. @ 2022-03-30：获取 18 条新闻
+2026-03-29 16:14:05,598 [INFO] public_collector: [聚合] ATVI @ 2022-03-30：13 条，情绪均值 = -0.1341
+2026-03-29 16:14:05,599 [INFO] aligner:   官方文本：4,416 字符 | 公众新闻：13 条 | 情绪均值：-0.1341 | 并购类型：unknown
+2026-03-29 16:14:05,599 [INFO] aligner: [对齐 6/8] VMW | 2023-08-23
+2026-03-29 16:14:07,487 [INFO] public_collector: [Finnhub] VMW @ 2023-08-23：获取 0 条新闻
+2026-03-29 16:14:21,424 [WARNING] public_collector: GDELT 限速，等待 30s 后重试…
+2026-03-29 16:15:16,239 [INFO] public_collector: [GDELT] VMWARE LLC @ 2023-08-23：获取 0 条新闻
+2026-03-29 16:15:16,244 [INFO] aligner:   官方文本：5,183 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 16:15:16,244 [INFO] aligner: [对齐 7/8] VMW | 2023-05-19
+2026-03-29 16:15:17,981 [INFO] public_collector: [Finnhub] VMW @ 2023-05-19：获取 0 条新闻
+2026-03-29 16:15:25,348 [WARNING] public_collector: GDELT 请求失败 [VMWARE LLC] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22VMWARE+LLC%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20230518000000&enddatetime=20230526235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 16:15:43,789 [WARNING] public_collector: GDELT 请求失败 [VMWARE LLC] 第2次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22VMWARE+LLC%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20230518000000&enddatetime=20230526235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 16:16:01,281 [WARNING] public_collector: GDELT 请求失败 [VMWARE LLC] 第3次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22VMWARE+LLC%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20230518000000&enddatetime=20230526235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 16:16:29,971 [INFO] public_collector: [GDELT] VMWARE LLC @ 2023-05-19：获取 0 条新闻
+2026-03-29 16:16:29,977 [INFO] aligner:   官方文本：5,613 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 16:16:29,977 [INFO] aligner: [对齐 8/8] XLNX | 2020-10-08
+2026-03-29 16:16:31,799 [INFO] public_collector: [Finnhub] XLNX @ 2020-10-08：获取 0 条新闻
+2026-03-29 16:16:42,446 [WARNING] public_collector: GDELT 请求失败 [MAXIM INTEGRATED PRODUCTS INC] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22MAXIM+INTEGRATED+PRODUCTS+INC%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20201007000000&enddatetime=20201015235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 16:16:59,854 [WARNING] public_collector: GDELT 请求失败 [MAXIM INTEGRATED PRODUCTS INC] 第2次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22MAXIM+INTEGRATED+PRODUCTS+INC%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20201007000000&enddatetime=20201015235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 16:17:20,641 [WARNING] public_collector: GDELT 请求失败 [MAXIM INTEGRATED PRODUCTS INC] 第3次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22MAXIM+INTEGRATED+PRODUCTS+INC%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20201007000000&enddatetime=20201015235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 16:17:52,816 [INFO] public_collector: [GDELT] MAXIM INTEGRATED PRODUCTS INC @ 2020-10-08：获取 6 条新闻
+2026-03-29 16:17:52,819 [INFO] public_collector: [聚合] XLNX @ 2020-10-08：5 条，情绪均值 = 0.1
+2026-03-29 16:17:52,820 [INFO] aligner:   官方文本：6,168 字符 | 公众新闻：5 条 | 情绪均值：0.1 | 并购类型：unknown
+2026-03-29 16:17:52,820 [INFO] aligner: 对齐完成，共 8 条记录写入数据库
+2026-03-29 16:17:52,847 [INFO] __main__: CSV 快照已保存：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.csv
+2026-03-29 22:38:44,558 [INFO] __main__: =======================================================
+2026-03-29 22:38:44,558 [INFO] __main__: Step 1 / 3  初始化数据库
+2026-03-29 22:38:44,558 [INFO] __main__: =======================================================
+2026-03-29 22:38:44,559 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 22:38:44,559 [INFO] __main__: =======================================================
+2026-03-29 22:38:44,559 [INFO] __main__: Step 2 / 3  采集 SEC EDGAR 文件
+2026-03-29 22:38:44,559 [INFO] __main__: =======================================================
+2026-03-29 22:38:44,559 [INFO] sec_collector: 精准模式：查询 2 个 ticker
+2026-03-29 22:38:44,559 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 22:38:45,678 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 22:38:46,882 [INFO] sec_collector: [XLNX] Submissions API：找到 23 份候选文件
+2026-03-29 22:38:47,442 [INFO] sec_collector: [VMW] Submissions API：找到 17 份候选文件
+2026-03-29 22:38:47,442 [INFO] sec_collector: 候选文件总数：20
+2026-03-29 22:38:47,443 [INFO] sec_collector: [1/20] XLNX | 8-K | 2024-12-02 | 0001683168-24-008452
+2026-03-29 22:38:50,078 [INFO] sec_collector:   ✓ 完成，文本长度 8,177 字符
+2026-03-29 22:38:50,078 [INFO] sec_collector: [2/20] XLNX | 8-K | 2024-11-12 | 0001683168-24-007895
+2026-03-29 22:38:52,238 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:38:52,239 [INFO] sec_collector: [3/20] XLNX | 8-K | 2024-09-16 | 0001683168-24-006429
+2026-03-29 22:38:55,796 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:38:55,796 [INFO] sec_collector: [4/20] XLNX | 8-K | 2024-07-01 | 0001683168-24-004550
+2026-03-29 22:38:57,226 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:38:57,226 [INFO] sec_collector: [5/20] XLNX | 8-K | 2024-02-21 | 0001683168-24-001098
+2026-03-29 22:38:59,005 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:38:59,005 [INFO] sec_collector: [6/20] XLNX | 8-K | 2022-11-22 | 0001683168-22-007982
+2026-03-29 22:39:00,209 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:39:00,209 [INFO] sec_collector: [7/20] XLNX | 8-K | 2022-08-09 | 0001683168-22-005449
+2026-03-29 22:39:01,385 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:39:01,385 [INFO] sec_collector: [8/20] XLNX | 8-K | 2021-09-03 | 0001683168-21-004112
+2026-03-29 22:39:02,875 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:39:02,875 [INFO] sec_collector: [9/20] XLNX | 8-K | 2021-08-04 | 0001022652-21-000080
+2026-03-29 22:39:05,204 [INFO] sec_collector:   ✓ 完成，文本长度 7,299 字符
+2026-03-29 22:39:05,204 [INFO] sec_collector: [10/20] XLNX | 8-K | 2021-07-01 | 0001022652-21-000066
+2026-03-29 22:39:06,611 [INFO] sec_collector:   ✓ 完成，文本长度 2,719 字符
+2026-03-29 22:39:06,612 [INFO] sec_collector: [11/20] VMW | 8-K | 2023-11-22 | 0001193125-23-282097
+2026-03-29 22:39:07,231 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:39:07,231 [INFO] sec_collector: [12/20] VMW | 8-K | 2023-10-30 | 0001193125-23-266257
+2026-03-29 22:39:08,332 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:39:08,333 [INFO] sec_collector: [13/20] VMW | 8-K | 2023-10-18 | 0001193125-23-258493
+2026-03-29 22:39:09,206 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:39:09,206 [INFO] sec_collector: [14/20] VMW | 8-K | 2023-08-23 | 0001124610-23-000055
+2026-03-29 22:39:09,207 [INFO] sec_collector:   已在库中，跳过
+2026-03-29 22:39:09,207 [INFO] sec_collector: [15/20] VMW | 8-K | 2023-05-19 | 0001124610-23-000023
+2026-03-29 22:39:09,208 [INFO] sec_collector:   已在库中，跳过
+2026-03-29 22:39:09,208 [INFO] sec_collector: [16/20] VMW | 8-K | 2023-02-17 | 0001124610-23-000004
+2026-03-29 22:39:09,802 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:39:09,802 [INFO] sec_collector: [17/20] VMW | 8-K | 2022-10-28 | 0001193125-22-272604
+2026-03-29 22:39:10,532 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:39:10,532 [INFO] sec_collector: [18/20] VMW | 8-K | 2022-05-26 | 0001193125-22-161168
+2026-03-29 22:39:12,252 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:39:12,252 [INFO] sec_collector: [19/20] VMW | 8-K | 2021-11-01 | 0001193125-21-315510
+2026-03-29 22:39:13,100 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:39:13,100 [INFO] sec_collector: [20/20] VMW | 8-K | 2021-10-19 | 0001124610-21-000059
+2026-03-29 22:39:14,153 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:39:14,153 [INFO] sec_collector: 采集完毕，有效记录：3 条
+2026-03-29 22:39:14,153 [INFO] __main__: =======================================================
+2026-03-29 22:39:14,153 [INFO] __main__: Step 3 / 3  对齐公众数据并写入数据库
+2026-03-29 22:39:14,153 [INFO] __main__: =======================================================
+2026-03-29 22:39:14,153 [INFO] aligner: [对齐 1/3] XLNX | 2024-12-02
+2026-03-29 22:39:16,706 [INFO] public_collector: [Finnhub] XLNX @ 2024-12-02：获取 0 条新闻
+2026-03-29 22:39:16,709 [INFO] public_collector: GDELT 查询名：Inseego（原始：INSEEGO CORP.）
+2026-03-29 22:39:39,951 [INFO] public_collector: [GDELT] INSEEGO CORP. @ 2024-12-02：获取 4 条新闻
+2026-03-29 22:39:39,956 [INFO] public_collector: [聚合] XLNX @ 2024-12-02：4 条，情绪均值 = 0.1015
+2026-03-29 22:39:39,958 [INFO] aligner:   官方文本：8,177 字符 | 公众新闻：4 条 | 情绪均值：0.1015 | 并购类型：unknown
+2026-03-29 22:39:39,958 [INFO] aligner: [对齐 2/3] XLNX | 2021-08-04
+2026-03-29 22:39:41,744 [INFO] public_collector: [Finnhub] XLNX @ 2021-08-04：获取 0 条新闻
+2026-03-29 22:39:41,745 [INFO] public_collector: GDELT 查询名：Inseego（原始：INSEEGO CORP.）
+2026-03-29 22:40:06,747 [INFO] public_collector: [GDELT] INSEEGO CORP. @ 2021-08-04：获取 1 条新闻
+2026-03-29 22:40:06,751 [INFO] public_collector: [聚合] XLNX @ 2021-08-04：1 条，情绪均值 = 0.0
+2026-03-29 22:40:06,753 [INFO] aligner:   官方文本：7,299 字符 | 公众新闻：1 条 | 情绪均值：0.0 | 并购类型：unknown
+2026-03-29 22:40:06,753 [INFO] aligner: [对齐 3/3] XLNX | 2021-07-01
+2026-03-29 22:40:08,653 [INFO] public_collector: [Finnhub] XLNX @ 2021-07-01：获取 0 条新闻
+2026-03-29 22:40:08,655 [INFO] public_collector: GDELT 查询名：Inseego（原始：INSEEGO CORP.）
+2026-03-29 22:40:16,251 [WARNING] public_collector: GDELT 请求失败 [INSEEGO CORP.] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Inseego%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20210630000000&enddatetime=20210708235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 22:40:48,851 [INFO] public_collector: [GDELT] INSEEGO CORP. @ 2021-07-01：获取 0 条新闻
+2026-03-29 22:40:48,855 [INFO] aligner:   官方文本：2,719 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 22:40:48,855 [INFO] aligner: 对齐完成，共 3 条记录写入数据库
+2026-03-29 22:40:48,882 [INFO] __main__: CSV 快照已保存：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.csv
+2026-03-29 22:46:40,234 [INFO] __main__: =======================================================
+2026-03-29 22:46:40,235 [INFO] __main__: Step 1 / 3  初始化数据库
+2026-03-29 22:46:40,235 [INFO] __main__: =======================================================
+2026-03-29 22:46:40,236 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 22:46:40,237 [INFO] __main__: =======================================================
+2026-03-29 22:46:40,237 [INFO] __main__: Step 2 / 3  采集 SEC EDGAR 文件
+2026-03-29 22:46:40,237 [INFO] __main__: =======================================================
+2026-03-29 22:46:40,237 [INFO] sec_collector: 精准模式：查询 4 个 ticker
+2026-03-29 22:46:40,237 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 22:46:41,186 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 22:46:42,187 [INFO] sec_collector: [AVGO] Submissions API：找到 56 份候选文件
+2026-03-29 22:46:42,739 [INFO] sec_collector: [QCOM] Submissions API：找到 9 份候选文件
+2026-03-29 22:46:43,634 [INFO] sec_collector: [AMD] Submissions API：找到 15 份候选文件
+2026-03-29 22:46:44,136 [INFO] sec_collector: [INTU] Submissions API：找到 28 份候选文件
+2026-03-29 22:46:44,137 [INFO] sec_collector: 候选文件总数：39
+2026-03-29 22:46:44,137 [INFO] sec_collector: [1/39] AVGO | 8-K | 2024-12-12 | 0001730168-24-000125
+2026-03-29 22:46:46,055 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:46:46,056 [INFO] sec_collector: [2/39] AVGO | 8-K | 2024-10-02 | 0001193125-24-231159
+2026-03-29 22:46:47,251 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:46:47,251 [INFO] sec_collector: [3/39] AVGO | 8-K | 2024-09-05 | 0001730168-24-000095
+2026-03-29 22:46:49,249 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:46:49,250 [INFO] sec_collector: [4/39] AVGO | 8-K | 2024-07-12 | 0001140361-24-033072
+2026-03-29 22:46:51,149 [INFO] sec_collector:   ✓ 完成，文本长度 2,231 字符
+2026-03-29 22:46:51,149 [INFO] sec_collector: [5/39] AVGO | 8-K | 2024-07-08 | 0001140361-24-032566
+2026-03-29 22:46:53,137 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:46:53,137 [INFO] sec_collector: [6/39] AVGO | 8-K | 2024-06-12 | 0001730168-24-000077
+2026-03-29 22:46:54,976 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:46:54,976 [INFO] sec_collector: [7/39] AVGO | 8-K | 2024-03-07 | 0001730168-24-000012
+2026-03-29 22:46:56,698 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:46:56,698 [INFO] sec_collector: [8/39] AVGO | 8-K | 2023-12-07 | 0001730168-23-000093
+2026-03-29 22:46:58,191 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:46:58,191 [INFO] sec_collector: [9/39] AVGO | 8-K | 2023-11-22 | 0001140361-23-054354
+2026-03-29 22:46:59,971 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:46:59,971 [INFO] sec_collector: [10/39] AVGO | 8-K | 2023-10-30 | 0001140361-23-050217
+2026-03-29 22:47:01,707 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:01,707 [INFO] sec_collector: [11/39] QCOM | 8-K | 2024-08-09 | 0000804328-24-000061
+2026-03-29 22:47:02,810 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:02,810 [INFO] sec_collector: [12/39] QCOM | 8-K | 2022-11-09 | 0001104659-22-116535
+2026-03-29 22:47:04,032 [INFO] sec_collector:   ✓ 完成，文本长度 8,268 字符
+2026-03-29 22:47:04,032 [INFO] sec_collector: [13/39] QCOM | 8-K | 2022-05-09 | 0001104659-22-057562
+2026-03-29 22:47:05,239 [INFO] sec_collector:   ✓ 完成，文本长度 8,211 字符
+2026-03-29 22:47:05,239 [INFO] sec_collector: [14/39] QCOM | 8-K | 2021-10-04 | 0001104659-21-122578
+2026-03-29 22:47:08,548 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:08,548 [INFO] sec_collector: [15/39] QCOM | 8-K | 2021-01-13 | 0001728949-21-000009
+2026-03-29 22:47:10,557 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:10,558 [INFO] sec_collector: [16/39] QCOM | 8-K | 2020-12-10 | 0001104659-20-134200
+2026-03-29 22:47:11,587 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:11,587 [INFO] sec_collector: [17/39] QCOM | 8-K | 2020-08-18 | 0001104659-20-096322
+2026-03-29 22:47:12,931 [INFO] sec_collector:   ✓ 完成，文本长度 12,096 字符
+2026-03-29 22:47:12,931 [INFO] sec_collector: [18/39] QCOM | 8-K | 2020-08-05 | 0001104659-20-090597
+2026-03-29 22:47:15,680 [INFO] sec_collector:   ✓ 完成，文本长度 4,023 字符
+2026-03-29 22:47:15,680 [INFO] sec_collector: [19/39] QCOM | 8-K | 2020-05-11 | 0001104659-20-058923
+2026-03-29 22:47:16,926 [INFO] sec_collector:   ✓ 完成，文本长度 7,852 字符
+2026-03-29 22:47:16,926 [INFO] sec_collector: [20/39] AMD | 8-K | 2024-08-19 | 0001193125-24-202457
+2026-03-29 22:47:19,501 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:19,501 [INFO] sec_collector: [21/39] AMD | 8-K | 2022-11-08 | 0000002488-22-000172
+2026-03-29 22:47:20,716 [INFO] sec_collector:   ✓ 完成，文本长度 5,501 字符
+2026-03-29 22:47:20,716 [INFO] sec_collector: [22/39] AMD | 8-K | 2022-06-09 | 0001193125-22-171108
+2026-03-29 22:47:21,871 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:21,871 [INFO] sec_collector: [23/39] AMD | 8-K | 2022-06-08 | 0001193125-22-170212
+2026-03-29 22:47:24,651 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:24,651 [INFO] sec_collector: [24/39] AMD | 8-K | 2022-05-03 | 0000002488-22-000074
+2026-03-29 22:47:27,497 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:27,497 [INFO] sec_collector: [25/39] AMD | 8-K | 2022-02-14 | 0000002488-22-000031
+2026-03-29 22:47:30,067 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:30,068 [INFO] sec_collector: [26/39] AMD | 8-K | 2022-02-10 | 0000002488-22-000026
+2026-03-29 22:47:31,710 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:31,710 [INFO] sec_collector: [27/39] AMD | 8-K | 2022-01-27 | 0000002488-22-000009
+2026-03-29 22:47:33,518 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:33,518 [INFO] sec_collector: [28/39] AMD | 8-K | 2021-12-23 | 0000002488-21-000205
+2026-03-29 22:47:34,968 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:34,968 [INFO] sec_collector: [29/39] AMD | 8-K | 2021-06-30 | 0000002488-21-000107
+2026-03-29 22:47:36,394 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:36,394 [INFO] sec_collector: [30/39] INTU | 8-K | 2024-11-21 | 0000896878-24-000051
+2026-03-29 22:47:37,547 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:37,547 [INFO] sec_collector: [31/39] INTU | 8-K | 2024-08-22 | 0000896878-24-000035
+2026-03-29 22:47:38,556 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:38,556 [INFO] sec_collector: [32/39] INTU | 8-K | 2024-05-23 | 0000896878-24-000024
+2026-03-29 22:47:39,669 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:39,669 [INFO] sec_collector: [33/39] INTU | 8-K | 2024-02-22 | 0000896878-24-000009
+2026-03-29 22:47:40,799 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:40,799 [INFO] sec_collector: [34/39] INTU | 8-K | 2023-11-28 | 0000896878-23-000039
+2026-03-29 22:47:42,636 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:42,636 [INFO] sec_collector: [35/39] INTU | 8-K | 2023-09-15 | 0001193125-23-236201
+2026-03-29 22:47:43,804 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:43,804 [INFO] sec_collector: [36/39] INTU | 8-K | 2023-08-24 | 0000896878-23-000031
+2026-03-29 22:47:45,703 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:45,704 [INFO] sec_collector: [37/39] INTU | 8-K | 2023-05-23 | 0000896878-23-000019
+2026-03-29 22:47:46,980 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:46,980 [INFO] sec_collector: [38/39] INTU | 8-K | 2023-02-23 | 0000896878-23-000009
+2026-03-29 22:47:48,113 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:48,113 [INFO] sec_collector: [39/39] INTU | 8-K | 2022-11-29 | 0000896878-22-000035
+2026-03-29 22:47:49,615 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:47:49,615 [INFO] sec_collector: 采集完毕，有效记录：7 条
+2026-03-29 22:47:49,615 [INFO] __main__: =======================================================
+2026-03-29 22:47:49,615 [INFO] __main__: Step 3 / 3  对齐公众数据并写入数据库
+2026-03-29 22:47:49,615 [INFO] __main__: =======================================================
+2026-03-29 22:47:49,615 [INFO] aligner: [对齐 1/7] AVGO | 2024-07-12
+2026-03-29 22:47:51,707 [INFO] public_collector: [Finnhub] AVGO @ 2024-07-12：获取 0 条新闻
+2026-03-29 22:47:51,711 [INFO] public_collector: GDELT 查询名：Broadcom（原始：Broadcom Inc.）
+2026-03-29 22:47:59,203 [WARNING] public_collector: GDELT 请求失败 [Broadcom Inc.] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Broadcom%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20240711000000&enddatetime=20240719235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 22:48:10,980 [WARNING] public_collector: GDELT 请求失败 [Broadcom Inc.] 第2次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Broadcom%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20240711000000&enddatetime=20240719235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 22:48:48,401 [INFO] public_collector: [GDELT] Broadcom Inc. @ 2024-07-12：获取 49 条新闻
+2026-03-29 22:48:48,406 [INFO] public_collector: [聚合] AVGO @ 2024-07-12：37 条，情绪均值 = 0.136
+2026-03-29 22:48:48,408 [INFO] aligner:   官方文本：2,231 字符 | 公众新闻：37 条 | 情绪均值：0.136 | 并购类型：unknown
+2026-03-29 22:48:48,408 [INFO] aligner: [对齐 2/7] QCOM | 2022-11-09
+2026-03-29 22:48:50,284 [INFO] public_collector: [Finnhub] QCOM @ 2022-11-09：获取 0 条新闻
+2026-03-29 22:48:50,286 [INFO] public_collector: GDELT 查询名：Qualcomm /De（原始：QUALCOMM INC/DE）
+2026-03-29 22:49:13,559 [INFO] public_collector: [GDELT] QUALCOMM INC/DE @ 2022-11-09：获取 0 条新闻
+2026-03-29 22:49:13,564 [INFO] aligner:   官方文本：8,268 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 22:49:13,564 [INFO] aligner: [对齐 3/7] QCOM | 2022-05-09
+2026-03-29 22:49:15,474 [INFO] public_collector: [Finnhub] QCOM @ 2022-05-09：获取 0 条新闻
+2026-03-29 22:49:15,477 [INFO] public_collector: GDELT 查询名：Qualcomm /De（原始：QUALCOMM INC/DE）
+2026-03-29 22:49:26,244 [WARNING] public_collector: GDELT 请求失败 [QUALCOMM INC/DE] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Qualcomm+%2FDe%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220508000000&enddatetime=20220516235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 22:49:46,929 [WARNING] public_collector: GDELT 请求失败 [QUALCOMM INC/DE] 第2次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Qualcomm+%2FDe%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220508000000&enddatetime=20220516235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 22:50:07,716 [WARNING] public_collector: GDELT 请求失败 [QUALCOMM INC/DE] 第3次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Qualcomm+%2FDe%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220508000000&enddatetime=20220516235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 22:50:20,017 [WARNING] public_collector: GDELT 请求失败 [QUALCOMM INC/DE] 第4次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Qualcomm+%2FDe%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220508000000&enddatetime=20220516235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 22:50:30,025 [INFO] aligner:   官方文本：8,211 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 22:50:30,025 [INFO] aligner: [对齐 4/7] QCOM | 2020-08-18
+2026-03-29 22:50:32,041 [INFO] public_collector: [Finnhub] QCOM @ 2020-08-18：获取 0 条新闻
+2026-03-29 22:50:32,043 [INFO] public_collector: GDELT 查询名：Qualcomm /De（原始：QUALCOMM INC/DE）
+2026-03-29 22:50:56,597 [INFO] public_collector: [GDELT] QUALCOMM INC/DE @ 2020-08-18：获取 0 条新闻
+2026-03-29 22:50:56,603 [INFO] aligner:   官方文本：12,096 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 22:50:56,603 [INFO] aligner: [对齐 5/7] QCOM | 2020-08-05
+2026-03-29 22:50:58,690 [INFO] public_collector: [Finnhub] QCOM @ 2020-08-05：获取 0 条新闻
+2026-03-29 22:50:58,692 [INFO] public_collector: GDELT 查询名：Qualcomm /De（原始：QUALCOMM INC/DE）
+2026-03-29 22:51:00,426 [WARNING] public_collector: GDELT 请求失败 [QUALCOMM INC/DE] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Qualcomm+%2FDe%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20200804000000&enddatetime=20200812235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 22:51:36,514 [INFO] public_collector: [GDELT] QUALCOMM INC/DE @ 2020-08-05：获取 0 条新闻
+2026-03-29 22:51:36,520 [INFO] aligner:   官方文本：4,023 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 22:51:36,520 [INFO] aligner: [对齐 6/7] QCOM | 2020-05-11
+2026-03-29 22:51:38,935 [INFO] public_collector: [Finnhub] QCOM @ 2020-05-11：获取 0 条新闻
+2026-03-29 22:51:38,937 [INFO] public_collector: GDELT 查询名：Qualcomm /De（原始：QUALCOMM INC/DE）
+2026-03-29 22:52:02,629 [INFO] public_collector: [GDELT] QUALCOMM INC/DE @ 2020-05-11：获取 0 条新闻
+2026-03-29 22:52:02,634 [INFO] aligner:   官方文本：7,852 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 22:52:02,634 [INFO] aligner: [对齐 7/7] AMD | 2022-11-08
+2026-03-29 22:52:04,435 [INFO] public_collector: [Finnhub] AMD @ 2022-11-08：获取 0 条新闻
+2026-03-29 22:52:04,437 [INFO] public_collector: GDELT 查询名：Advanced Micro Devices（原始：ADVANCED MICRO DEVICES INC）
+2026-03-29 22:52:17,271 [WARNING] public_collector: GDELT 限速，等待 30s 后重试…
+2026-03-29 22:53:14,124 [INFO] public_collector: [GDELT] ADVANCED MICRO DEVICES INC @ 2022-11-08：获取 17 条新闻
+2026-03-29 22:53:14,129 [INFO] public_collector: [聚合] AMD @ 2022-11-08：16 条，情绪均值 = 0.2301
+2026-03-29 22:53:14,130 [INFO] aligner:   官方文本：5,501 字符 | 公众新闻：16 条 | 情绪均值：0.2301 | 并购类型：unknown
+2026-03-29 22:53:14,131 [INFO] aligner: 对齐完成，共 7 条记录写入数据库
+2026-03-29 22:53:14,169 [INFO] __main__: CSV 快照已保存：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.csv
+2026-03-29 22:56:59,174 [INFO] __main__: =======================================================
+2026-03-29 22:56:59,175 [INFO] __main__: Step 1 / 3  初始化数据库
+2026-03-29 22:56:59,175 [INFO] __main__: =======================================================
+2026-03-29 22:56:59,176 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 22:56:59,176 [INFO] __main__: =======================================================
+2026-03-29 22:56:59,177 [INFO] __main__: Step 2 / 3  采集 SEC EDGAR 文件
+2026-03-29 22:56:59,177 [INFO] __main__: =======================================================
+2026-03-29 22:56:59,177 [INFO] sec_collector: 精准模式：查询 1 个 ticker
+2026-03-29 22:56:59,177 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 22:57:00,177 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 22:57:01,314 [INFO] sec_collector: [QCOM] Submissions API：找到 9 份候选文件
+2026-03-29 22:57:01,314 [INFO] sec_collector: 候选文件总数：9
+2026-03-29 22:57:01,314 [INFO] sec_collector: [1/9] QCOM | 8-K | 2024-08-09 | 0000804328-24-000061
+2026-03-29 22:57:02,222 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:57:02,222 [INFO] sec_collector: [2/9] QCOM | 8-K | 2022-11-09 | 0001104659-22-116535
+2026-03-29 22:57:03,437 [INFO] sec_collector:   ✓ 完成，文本长度 8,268 字符
+2026-03-29 22:57:03,437 [INFO] sec_collector: [3/9] QCOM | 8-K | 2022-05-09 | 0001104659-22-057562
+2026-03-29 22:57:04,173 [INFO] sec_collector:   ✓ 完成，文本长度 8,211 字符
+2026-03-29 22:57:04,173 [INFO] sec_collector: [4/9] QCOM | 8-K | 2021-10-04 | 0001104659-21-122578
+2026-03-29 22:57:05,912 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:57:05,912 [INFO] sec_collector: [5/9] QCOM | 8-K | 2021-01-13 | 0001728949-21-000009
+2026-03-29 22:57:07,263 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:57:07,263 [INFO] sec_collector: [6/9] QCOM | 8-K | 2020-12-10 | 0001104659-20-134200
+2026-03-29 22:57:08,147 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 22:57:08,147 [INFO] sec_collector: [7/9] QCOM | 8-K | 2020-08-18 | 0001104659-20-096322
+2026-03-29 22:57:08,987 [INFO] sec_collector:   ✓ 完成，文本长度 12,096 字符
+2026-03-29 22:57:08,988 [INFO] sec_collector: [8/9] QCOM | 8-K | 2020-08-05 | 0001104659-20-090597
+2026-03-29 22:57:10,349 [INFO] sec_collector:   ✓ 完成，文本长度 4,023 字符
+2026-03-29 22:57:10,349 [INFO] sec_collector: [9/9] QCOM | 8-K | 2020-05-11 | 0001104659-20-058923
+2026-03-29 22:57:11,637 [INFO] sec_collector:   ✓ 完成，文本长度 7,852 字符
+2026-03-29 22:57:11,637 [INFO] sec_collector: 采集完毕，有效记录：5 条
+2026-03-29 22:57:11,637 [INFO] __main__: =======================================================
+2026-03-29 22:57:11,637 [INFO] __main__: Step 3 / 3  对齐公众数据并写入数据库
+2026-03-29 22:57:11,637 [INFO] __main__: =======================================================
+2026-03-29 22:57:11,637 [INFO] aligner: [对齐 1/5] QCOM | 2022-11-09
+2026-03-29 22:57:13,532 [INFO] public_collector: [Finnhub] QCOM @ 2022-11-09：获取 0 条新闻
+2026-03-29 22:57:13,535 [INFO] public_collector: GDELT 查询名：Qualcomm（原始：QUALCOMM INC/DE）
+2026-03-29 22:57:20,769 [WARNING] public_collector: GDELT 请求失败 [QUALCOMM INC/DE] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Qualcomm%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20221108000000&enddatetime=20221116235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 22:57:41,517 [WARNING] public_collector: GDELT 限速，等待 60s 后重试…
+2026-03-29 22:58:48,833 [WARNING] public_collector: GDELT 请求失败 [QUALCOMM INC/DE] 第3次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Qualcomm%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20221108000000&enddatetime=20221116235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 22:59:09,301 [WARNING] public_collector: GDELT 请求失败 [QUALCOMM INC/DE] 第4次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Qualcomm%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20221108000000&enddatetime=20221116235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 22:59:19,312 [INFO] aligner:   官方文本：8,268 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 22:59:19,312 [INFO] aligner: [对齐 2/5] QCOM | 2022-05-09
+2026-03-29 22:59:21,170 [INFO] public_collector: [Finnhub] QCOM @ 2022-05-09：获取 0 条新闻
+2026-03-29 22:59:21,172 [INFO] public_collector: GDELT 查询名：Qualcomm（原始：QUALCOMM INC/DE）
+2026-03-29 22:59:47,964 [INFO] public_collector: [GDELT] QUALCOMM INC/DE @ 2022-05-09：获取 31 条新闻
+2026-03-29 22:59:47,969 [INFO] public_collector: [聚合] QCOM @ 2022-05-09：27 条，情绪均值 = 0.1376
+2026-03-29 22:59:47,970 [INFO] aligner:   官方文本：8,211 字符 | 公众新闻：27 条 | 情绪均值：0.1376 | 并购类型：unknown
+2026-03-29 22:59:47,970 [INFO] aligner: [对齐 3/5] QCOM | 2020-08-18
+2026-03-29 22:59:50,085 [INFO] public_collector: [Finnhub] QCOM @ 2020-08-18：获取 0 条新闻
+2026-03-29 22:59:50,086 [INFO] public_collector: GDELT 查询名：Qualcomm（原始：QUALCOMM INC/DE）
+2026-03-29 23:00:14,950 [INFO] public_collector: [GDELT] QUALCOMM INC/DE @ 2020-08-18：获取 48 条新闻
+2026-03-29 23:00:14,955 [INFO] public_collector: [聚合] QCOM @ 2020-08-18：43 条，情绪均值 = 0.1447
+2026-03-29 23:00:14,957 [INFO] aligner:   官方文本：12,096 字符 | 公众新闻：43 条 | 情绪均值：0.1447 | 并购类型：unknown
+2026-03-29 23:00:14,957 [INFO] aligner: [对齐 4/5] QCOM | 2020-08-05
+2026-03-29 23:00:16,779 [INFO] public_collector: [Finnhub] QCOM @ 2020-08-05：获取 0 条新闻
+2026-03-29 23:00:16,781 [INFO] public_collector: GDELT 查询名：Qualcomm（原始：QUALCOMM INC/DE）
+2026-03-29 23:00:40,858 [INFO] public_collector: [GDELT] QUALCOMM INC/DE @ 2020-08-05：获取 96 条新闻
+2026-03-29 23:00:40,864 [INFO] public_collector: [聚合] QCOM @ 2020-08-05：74 条，情绪均值 = 0.0639
+2026-03-29 23:00:40,866 [INFO] aligner:   官方文本：4,023 字符 | 公众新闻：74 条 | 情绪均值：0.0639 | 并购类型：unknown
+2026-03-29 23:00:40,866 [INFO] aligner: [对齐 5/5] QCOM | 2020-05-11
+2026-03-29 23:00:42,706 [INFO] public_collector: [Finnhub] QCOM @ 2020-05-11：获取 0 条新闻
+2026-03-29 23:00:42,707 [INFO] public_collector: GDELT 查询名：Qualcomm（原始：QUALCOMM INC/DE）
+2026-03-29 23:00:51,202 [WARNING] public_collector: GDELT 请求失败 [QUALCOMM INC/DE] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Qualcomm%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20200510000000&enddatetime=20200518235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:01:10,965 [WARNING] public_collector: GDELT 请求失败 [QUALCOMM INC/DE] 第2次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Qualcomm%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20200510000000&enddatetime=20200518235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:01:43,036 [INFO] public_collector: [GDELT] QUALCOMM INC/DE @ 2020-05-11：获取 250 条新闻
+2026-03-29 23:01:43,040 [INFO] public_collector: [聚合] QCOM @ 2020-05-11：92 条，情绪均值 = -0.1278
+2026-03-29 23:01:43,041 [INFO] aligner:   官方文本：7,852 字符 | 公众新闻：92 条 | 情绪均值：-0.1278 | 并购类型：unknown
+2026-03-29 23:01:43,041 [INFO] aligner: 对齐完成，共 5 条记录写入数据库
+2026-03-29 23:01:43,066 [INFO] __main__: CSV 快照已保存：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.csv
+2026-03-29 23:12:05,784 [INFO] __main__: =======================================================
+2026-03-29 23:12:05,785 [INFO] __main__: Step 1 / 3  初始化数据库
+2026-03-29 23:12:05,785 [INFO] __main__: =======================================================
+2026-03-29 23:12:05,788 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 23:12:05,788 [INFO] __main__: =======================================================
+2026-03-29 23:12:05,788 [INFO] __main__: Step 2 / 3  采集 SEC EDGAR 文件
+2026-03-29 23:12:05,788 [INFO] __main__: =======================================================
+2026-03-29 23:12:05,788 [INFO] sec_collector: 精准模式：查询 6 个 ticker
+2026-03-29 23:12:05,788 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 23:12:06,739 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 23:12:07,751 [INFO] sec_collector: [CRM] Submissions API：找到 2 份候选文件
+2026-03-29 23:12:08,273 [INFO] sec_collector: [TWTR] Submissions API：找到 21 份候选文件
+2026-03-29 23:12:08,856 [INFO] sec_collector: [BIIB] Submissions API：找到 15 份候选文件
+2026-03-29 23:12:09,429 [INFO] sec_collector: [MRNA] Submissions API：找到 1 份候选文件
+2026-03-29 23:12:10,671 [INFO] sec_collector: [ZM] Submissions API：找到 4 份候选文件
+2026-03-29 23:12:11,214 [INFO] sec_collector: [DOCU] Submissions API：找到 10 份候选文件
+2026-03-29 23:12:11,214 [INFO] sec_collector: 候选文件总数：37
+2026-03-29 23:12:11,214 [INFO] sec_collector: [1/37] CRM | 8-K | 2024-11-05 | 0001193125-24-251243
+2026-03-29 23:12:11,816 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:11,816 [INFO] sec_collector: [2/37] CRM | 8-K | 2024-02-28 | 0001108524-24-000002
+2026-03-29 23:12:12,725 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:12,725 [INFO] sec_collector: [3/37] TWTR | 8-K | 2022-10-31 | 0001193125-22-272772
+2026-03-29 23:12:14,327 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:14,327 [INFO] sec_collector: [4/37] TWTR | 8-K | 2022-09-14 | 0001193125-22-244289
+2026-03-29 23:12:16,363 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:16,363 [INFO] sec_collector: [5/37] TWTR | 8-K | 2022-09-12 | 0001193125-22-242335
+2026-03-29 23:12:18,027 [INFO] sec_collector:   ✓ 完成，文本长度 4,601 字符
+2026-03-29 23:12:18,027 [INFO] sec_collector: [6/37] TWTR | 8-K | 2022-08-30 | 0001193125-22-233469
+2026-03-29 23:12:19,907 [INFO] sec_collector:   ✓ 完成，文本长度 4,499 字符
+2026-03-29 23:12:19,907 [INFO] sec_collector: [7/37] TWTR | 8-K | 2022-07-13 | 0001193125-22-192993
+2026-03-29 23:12:21,588 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:21,588 [INFO] sec_collector: [8/37] TWTR | 8-K | 2022-07-11 | 0001193125-22-191300
+2026-03-29 23:12:24,120 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:24,121 [INFO] sec_collector: [9/37] TWTR | 8-K | 2022-04-26 | 0001193125-22-120461
+2026-03-29 23:12:25,830 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:25,831 [INFO] sec_collector: [10/37] TWTR | 8-K | 2022-04-25 | 0001193125-22-117720
+2026-03-29 23:12:27,904 [INFO] sec_collector:   ✓ 完成，文本长度 3,988 字符
+2026-03-29 23:12:27,904 [INFO] sec_collector: [11/37] TWTR | 8-K | 2022-04-18 | 0001193125-22-107462
+2026-03-29 23:12:29,938 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:29,938 [INFO] sec_collector: [12/37] TWTR | 8-K | 2022-04-05 | 0001193125-22-095651
+2026-03-29 23:12:31,106 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:31,106 [INFO] sec_collector: [13/37] BIIB | 8-K | 2024-08-14 | 0001193125-24-200660
+2026-03-29 23:12:32,336 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:32,336 [INFO] sec_collector: [14/37] BIIB | 8-K | 2023-09-26 | 0001193125-23-242617
+2026-03-29 23:12:34,516 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:34,517 [INFO] sec_collector: [15/37] BIIB | 8-K | 2023-09-01 | 0001193125-23-227692
+2026-03-29 23:12:35,779 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:35,780 [INFO] sec_collector: [16/37] BIIB | 8-K | 2023-07-31 | 0001193125-23-198542
+2026-03-29 23:12:37,796 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:37,796 [INFO] sec_collector: [17/37] BIIB | 8-K | 2023-07-28 | 0001193125-23-196808
+2026-03-29 23:12:40,093 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:40,093 [INFO] sec_collector: [18/37] BIIB | 8-K | 2023-05-03 | 0001193125-23-133476
+2026-03-29 23:12:41,155 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:41,155 [INFO] sec_collector: [19/37] BIIB | 8-K | 2023-03-09 | 0001193125-23-064961
+2026-03-29 23:12:42,223 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:42,223 [INFO] sec_collector: [20/37] BIIB | 8-K | 2021-11-19 | 0001193125-21-334519
+2026-03-29 23:12:43,562 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:43,562 [INFO] sec_collector: [21/37] BIIB | 8-K | 2021-04-09 | 0000875045-21-000018
+2026-03-29 23:12:45,412 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:45,412 [INFO] sec_collector: [22/37] BIIB | 8-K | 2021-02-16 | 0001193125-21-044891
+2026-03-29 23:12:46,753 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:46,753 [INFO] sec_collector: [23/37] MRNA | 8-K | 2021-04-28 | 0001193125-21-135412
+2026-03-29 23:12:48,339 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:48,339 [INFO] sec_collector: [24/37] ZM | 8-K | 2023-07-21 | 0001193125-23-191465
+2026-03-29 23:12:49,400 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:49,400 [INFO] sec_collector: [25/37] ZM | 8-K | 2021-07-19 | 0001193125-21-218004
+2026-03-29 23:12:52,407 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:52,407 [INFO] sec_collector: [26/37] ZM | 8-K | 2021-01-13 | 0001193125-21-008156
+2026-03-29 23:12:54,329 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:54,329 [INFO] sec_collector: [27/37] ZM | 8-K | 2020-12-18 | 0001585521-20-000307
+2026-03-29 23:12:57,227 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:57,228 [INFO] sec_collector: [28/37] DOCU | 8-K | 2023-01-13 | 0001261333-23-000002
+2026-03-29 23:12:58,587 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:12:58,588 [INFO] sec_collector: [29/37] DOCU | 8-K | 2022-05-12 | 0001261333-22-000067
+2026-03-29 23:13:00,772 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:13:00,772 [INFO] sec_collector: [30/37] DOCU | 8-K | 2021-05-07 | 0001261333-21-000080
+2026-03-29 23:13:03,053 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:13:03,053 [INFO] sec_collector: [31/37] DOCU | 8-K | 2021-01-15 | 0001628280-21-000491
+2026-03-29 23:13:05,753 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:13:05,753 [INFO] sec_collector: [32/37] DOCU | 8-K | 2021-01-13 | 0001628280-21-000417
+2026-03-29 23:13:07,588 [INFO] sec_collector:   ✓ 完成，文本长度 4,140 字符
+2026-03-29 23:13:07,588 [INFO] sec_collector: [33/37] DOCU | 8-K | 2021-01-11 | 0001628280-21-000358
+2026-03-29 23:13:10,346 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:13:10,346 [INFO] sec_collector: [34/37] DOCU | 8-K | 2020-05-15 | 0001261333-20-000076
+2026-03-29 23:13:12,445 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:13:12,445 [INFO] sec_collector: [35/37] DOCU | 8-K | 2020-05-04 | 0001261333-20-000062
+2026-03-29 23:13:14,724 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:13:14,724 [INFO] sec_collector: [36/37] DOCU | 8-K | 2020-03-24 | 0001261333-20-000025
+2026-03-29 23:13:15,919 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:13:15,919 [INFO] sec_collector: [37/37] DOCU | 8-K | 2020-02-28 | 0001261333-20-000008
+2026-03-29 23:13:18,772 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:13:18,772 [INFO] sec_collector: 采集完毕，有效记录：4 条
+2026-03-29 23:13:18,772 [INFO] __main__: =======================================================
+2026-03-29 23:13:18,772 [INFO] __main__: Step 3 / 3  对齐公众数据并写入数据库
+2026-03-29 23:13:18,772 [INFO] __main__: =======================================================
+2026-03-29 23:13:18,772 [INFO] aligner: [对齐 1/4] TWTR | 2022-09-12
+2026-03-29 23:13:20,625 [INFO] public_collector: [Finnhub] TWTR @ 2022-09-12：获取 0 条新闻
+2026-03-29 23:13:20,628 [INFO] public_collector: GDELT 查询名：Twitter（原始：TWITTER, INC.）
+2026-03-29 23:13:43,353 [INFO] public_collector: [GDELT] TWITTER, INC. @ 2022-09-12：获取 250 条新闻
+2026-03-29 23:13:43,358 [INFO] public_collector: [聚合] TWTR @ 2022-09-12：131 条，情绪均值 = 0.0406
+2026-03-29 23:13:43,359 [INFO] aligner:   官方文本：4,601 字符 | 公众新闻：131 条 | 情绪均值：0.0406 | 并购类型：unknown
+2026-03-29 23:13:43,359 [INFO] aligner: [对齐 2/4] TWTR | 2022-08-30
+2026-03-29 23:13:45,125 [INFO] public_collector: [Finnhub] TWTR @ 2022-08-30：获取 0 条新闻
+2026-03-29 23:13:45,128 [INFO] public_collector: GDELT 查询名：Twitter（原始：TWITTER, INC.）
+2026-03-29 23:14:10,587 [INFO] public_collector: [GDELT] TWITTER, INC. @ 2022-08-30：获取 250 条新闻
+2026-03-29 23:14:10,593 [INFO] public_collector: [聚合] TWTR @ 2022-08-30：195 条，情绪均值 = -0.0435
+2026-03-29 23:14:10,594 [INFO] aligner:   官方文本：4,499 字符 | 公众新闻：195 条 | 情绪均值：-0.0435 | 并购类型：unknown
+2026-03-29 23:14:10,594 [INFO] aligner: [对齐 3/4] TWTR | 2022-04-25
+2026-03-29 23:14:12,481 [INFO] public_collector: [Finnhub] TWTR @ 2022-04-25：获取 0 条新闻
+2026-03-29 23:14:12,483 [INFO] public_collector: GDELT 查询名：Twitter（原始：TWITTER, INC.）
+2026-03-29 23:14:22,985 [WARNING] public_collector: GDELT 限速，等待 30s 后重试…
+2026-03-29 23:15:27,954 [INFO] public_collector: [GDELT] TWITTER, INC. @ 2022-04-25：获取 250 条新闻
+2026-03-29 23:15:27,957 [INFO] public_collector: [聚合] TWTR @ 2022-04-25：163 条，情绪均值 = -0.0037
+2026-03-29 23:15:27,958 [INFO] aligner:   官方文本：3,988 字符 | 公众新闻：163 条 | 情绪均值：-0.0037 | 并购类型：unknown
+2026-03-29 23:15:27,958 [INFO] aligner: [对齐 4/4] DOCU | 2021-01-13
+2026-03-29 23:15:29,821 [INFO] public_collector: [Finnhub] DOCU @ 2021-01-13：获取 0 条新闻
+2026-03-29 23:15:29,823 [INFO] public_collector: GDELT 查询名：Docusign（原始：DOCUSIGN, INC.）
+2026-03-29 23:15:54,141 [INFO] public_collector: [GDELT] DOCUSIGN, INC. @ 2021-01-13：获取 6 条新闻
+2026-03-29 23:15:54,146 [INFO] public_collector: [聚合] DOCU @ 2021-01-13：6 条，情绪均值 = 0.0616
+2026-03-29 23:15:54,147 [INFO] aligner:   官方文本：4,140 字符 | 公众新闻：6 条 | 情绪均值：0.0616 | 并购类型：unknown
+2026-03-29 23:15:54,148 [INFO] aligner: 对齐完成，共 4 条记录写入数据库
+2026-03-29 23:15:54,181 [INFO] __main__: CSV 快照已保存：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.csv
+2026-03-29 23:18:11,662 [INFO] __main__: =======================================================
+2026-03-29 23:18:11,662 [INFO] __main__: Step 1 / 3  初始化数据库
+2026-03-29 23:18:11,662 [INFO] __main__: =======================================================
+2026-03-29 23:18:11,664 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 23:18:11,664 [INFO] __main__: =======================================================
+2026-03-29 23:18:11,664 [INFO] __main__: Step 2 / 3  采集 SEC EDGAR 文件
+2026-03-29 23:18:11,664 [INFO] __main__: =======================================================
+2026-03-29 23:18:11,664 [INFO] sec_collector: 精准模式：查询 5 个 ticker
+2026-03-29 23:18:11,664 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 23:18:12,626 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 23:18:13,409 [INFO] sec_collector: [MSFT] Submissions API：找到 3 份候选文件
+2026-03-29 23:18:14,000 [INFO] sec_collector: [GOOGL] Submissions API：找到 0 份候选文件
+2026-03-29 23:18:14,592 [INFO] sec_collector: [AMZN] Submissions API：找到 0 份候选文件
+2026-03-29 23:18:15,342 [INFO] sec_collector: [ATVI] Submissions API：找到 0 份候选文件
+2026-03-29 23:18:15,868 [INFO] sec_collector: [ADBE] Submissions API：找到 1 份候选文件
+2026-03-29 23:18:15,868 [INFO] sec_collector: 候选文件总数：4
+2026-03-29 23:18:15,868 [INFO] sec_collector: [1/4] MSFT | S-4 | 2024-04-26 | 0001193125-24-118081
+2026-03-29 23:18:16,966 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:18:16,966 [INFO] sec_collector: [2/4] MSFT | S-4 | 2021-02-16 | 0001193125-21-044789
+2026-03-29 23:18:18,097 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:18:18,097 [INFO] sec_collector: [3/4] MSFT | S-4 | 2020-04-30 | 0001193125-20-128744
+2026-03-29 23:18:19,613 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:18:19,613 [INFO] sec_collector: [4/4] ADBE | S-4 | 2022-11-15 | 0001140361-22-041527
+2026-03-29 23:18:21,511 [INFO] sec_collector:   文本截断至 30,000 字符
+2026-03-29 23:18:21,933 [INFO] sec_collector:   ✓ 完成，文本长度 30,000 字符
+2026-03-29 23:18:21,933 [INFO] sec_collector: 采集完毕，有效记录：1 条
+2026-03-29 23:18:21,933 [INFO] __main__: =======================================================
+2026-03-29 23:18:21,933 [INFO] __main__: Step 3 / 3  对齐公众数据并写入数据库
+2026-03-29 23:18:21,933 [INFO] __main__: =======================================================
+2026-03-29 23:18:21,933 [INFO] aligner: [对齐 1/1] ADBE | 2022-11-15
+2026-03-29 23:18:23,805 [INFO] public_collector: [Finnhub] ADBE @ 2022-11-15：获取 0 条新闻
+2026-03-29 23:18:23,809 [INFO] public_collector: GDELT 查询名：Adobe（原始：ADOBE INC.）
+2026-03-29 23:18:33,727 [WARNING] public_collector: GDELT 限速，等待 30s 后重试…
+2026-03-29 23:19:34,540 [INFO] public_collector: [GDELT] ADOBE INC. @ 2022-11-15：获取 46 条新闻
+2026-03-29 23:19:34,546 [INFO] public_collector: [聚合] ADBE @ 2022-11-15：40 条，情绪均值 = 0.1096
+2026-03-29 23:19:34,549 [INFO] aligner:   官方文本：30,000 字符 | 公众新闻：40 条 | 情绪均值：0.1096 | 并购类型：unknown
+2026-03-29 23:19:34,549 [INFO] aligner: 对齐完成，共 1 条记录写入数据库
+2026-03-29 23:19:34,580 [INFO] __main__: CSV 快照已保存：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.csv
+2026-03-29 23:26:38,355 [INFO] __main__: =======================================================
+2026-03-29 23:26:38,356 [INFO] __main__: Step 1 / 3  初始化数据库
+2026-03-29 23:26:38,356 [INFO] __main__: =======================================================
+2026-03-29 23:26:38,359 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 23:26:38,359 [INFO] __main__: =======================================================
+2026-03-29 23:26:38,359 [INFO] __main__: Step 2 / 3  采集 SEC EDGAR 文件
+2026-03-29 23:26:38,359 [INFO] __main__: =======================================================
+2026-03-29 23:26:38,359 [INFO] sec_collector: 精准模式：查询 5 个 ticker
+2026-03-29 23:26:38,359 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 23:26:41,665 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 23:26:42,439 [INFO] sec_collector: [NOW] Submissions API：找到 1 份候选文件
+2026-03-29 23:26:42,965 [INFO] sec_collector: [WDAY] Submissions API：找到 10 份候选文件
+2026-03-29 23:26:42,966 [WARNING] sec_collector: 找不到 SPLK 的 CIK，跳过
+2026-03-29 23:26:43,510 [INFO] sec_collector: [OKTA] Submissions API：找到 9 份候选文件
+2026-03-29 23:26:44,060 [INFO] sec_collector: [SNOW] Submissions API：找到 1 份候选文件
+2026-03-29 23:26:44,061 [INFO] sec_collector: 候选文件总数：21
+2026-03-29 23:26:44,061 [INFO] sec_collector: [1/21] NOW | 8-K | 2023-05-16 | 0001373715-23-000220
+2026-03-29 23:26:45,830 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:26:45,830 [INFO] sec_collector: [2/21] WDAY | 8-K | 2024-08-22 | 0001327811-24-000163
+2026-03-29 23:26:47,815 [INFO] sec_collector:   ✓ 完成，文本长度 5,656 字符
+2026-03-29 23:26:47,815 [INFO] sec_collector: [3/21] WDAY | 8-K | 2024-02-26 | 0001327811-24-000032
+2026-03-29 23:26:49,663 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:26:49,664 [INFO] sec_collector: [4/21] WDAY | 8-K | 2024-02-26 | 0001327811-24-000031
+2026-03-29 23:26:51,450 [INFO] sec_collector:   ✓ 完成，文本长度 5,665 字符
+2026-03-29 23:26:51,450 [INFO] sec_collector: [5/21] WDAY | 8-K | 2023-01-31 | 0001104659-23-008212
+2026-03-29 23:26:53,484 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:26:53,484 [INFO] sec_collector: [6/21] WDAY | 8-K | 2022-11-29 | 0001327811-22-000182
+2026-03-29 23:26:56,053 [INFO] sec_collector:   ✓ 完成，文本长度 5,922 字符
+2026-03-29 23:26:56,054 [INFO] sec_collector: [7/21] WDAY | 8-K | 2022-04-07 | 0001104659-22-043661
+2026-03-29 23:26:57,121 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:26:57,121 [INFO] sec_collector: [8/21] WDAY | 8-K | 2022-04-01 | 0001104659-22-041812
+2026-03-29 23:26:58,227 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:26:58,227 [INFO] sec_collector: [9/21] WDAY | 8-K | 2021-11-18 | 0001327811-21-000176
+2026-03-29 23:27:00,703 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:27:00,703 [INFO] sec_collector: [10/21] WDAY | 8-K | 2021-01-28 | 0001193125-21-020093
+2026-03-29 23:27:02,657 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:27:02,657 [INFO] sec_collector: [11/21] WDAY | 8-K | 2020-04-06 | 0001327811-20-000043
+2026-03-29 23:27:04,266 [INFO] sec_collector:   ✓ 完成，文本长度 13,785 字符
+2026-03-29 23:27:04,267 [INFO] sec_collector: [12/21] OKTA | 8-K | 2024-02-01 | 0001660134-24-000005
+2026-03-29 23:27:05,596 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:27:05,596 [INFO] sec_collector: [13/21] OKTA | 8-K | 2023-02-02 | 0001193125-23-022188
+2026-03-29 23:27:07,629 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:27:07,629 [INFO] sec_collector: [14/21] OKTA | 8-K | 2022-03-25 | 0001193125-22-085134
+2026-03-29 23:27:08,954 [INFO] sec_collector:   ✓ 完成，文本长度 5,152 字符
+2026-03-29 23:27:08,954 [INFO] sec_collector: [15/21] OKTA | 8-K | 2021-05-10 | 0001193125-21-156436
+2026-03-29 23:27:11,852 [INFO] sec_collector:   ✓ 完成，文本长度 4,870 字符
+2026-03-29 23:27:11,852 [INFO] sec_collector: [16/21] OKTA | 8-K | 2021-05-03 | 0001193125-21-146823
+2026-03-29 23:27:13,673 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:27:13,674 [INFO] sec_collector: [17/21] OKTA | 8-K | 2021-03-03 | 0001193125-21-067561
+2026-03-29 23:27:15,434 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:27:15,435 [INFO] sec_collector: [18/21] OKTA | 8-K | 2020-06-15 | 0001193125-20-168061
+2026-03-29 23:27:16,645 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:27:16,646 [INFO] sec_collector: [19/21] OKTA | 8-K | 2020-06-11 | 0001193125-20-166065
+2026-03-29 23:27:18,901 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:27:18,902 [INFO] sec_collector: [20/21] OKTA | 8-K | 2020-04-01 | 0001193125-20-093505
+2026-03-29 23:27:20,665 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:27:20,665 [INFO] sec_collector: [21/21] SNOW | 8-K | 2024-09-27 | 0001640147-24-000234
+2026-03-29 23:27:23,201 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:27:23,201 [INFO] sec_collector: 采集完毕，有效记录：6 条
+2026-03-29 23:27:23,201 [INFO] __main__: =======================================================
+2026-03-29 23:27:23,201 [INFO] __main__: Step 3 / 3  对齐公众数据并写入数据库
+2026-03-29 23:27:23,201 [INFO] __main__: =======================================================
+2026-03-29 23:27:23,201 [INFO] aligner: [对齐 1/6] WDAY | 2024-08-22
+2026-03-29 23:27:25,063 [INFO] public_collector: [Finnhub] WDAY @ 2024-08-22：获取 0 条新闻
+2026-03-29 23:27:25,067 [INFO] public_collector: GDELT 查询名：Workday（原始：Workday, Inc.）
+2026-03-29 23:27:45,844 [INFO] public_collector: [GDELT] Workday, Inc. @ 2024-08-22：获取 13 条新闻
+2026-03-29 23:27:45,848 [INFO] public_collector: [聚合] WDAY @ 2024-08-22：12 条，情绪均值 = -0.033
+2026-03-29 23:27:45,849 [INFO] aligner:   官方文本：5,656 字符 | 公众新闻：12 条 | 情绪均值：-0.033 | 并购类型：unknown
+2026-03-29 23:27:45,849 [INFO] aligner: [对齐 2/6] WDAY | 2024-02-26
+2026-03-29 23:27:47,658 [INFO] public_collector: [Finnhub] WDAY @ 2024-02-26：获取 0 条新闻
+2026-03-29 23:27:47,661 [INFO] public_collector: GDELT 查询名：Workday（原始：Workday, Inc.）
+2026-03-29 23:28:16,649 [INFO] public_collector: [GDELT] Workday, Inc. @ 2024-02-26：获取 24 条新闻
+2026-03-29 23:28:16,653 [INFO] public_collector: [聚合] WDAY @ 2024-02-26：20 条，情绪均值 = 0.0955
+2026-03-29 23:28:16,654 [INFO] aligner:   官方文本：5,665 字符 | 公众新闻：20 条 | 情绪均值：0.0955 | 并购类型：unknown
+2026-03-29 23:28:16,654 [INFO] aligner: [对齐 3/6] WDAY | 2022-11-29
+2026-03-29 23:28:20,602 [INFO] public_collector: [Finnhub] WDAY @ 2022-11-29：获取 0 条新闻
+2026-03-29 23:28:20,603 [INFO] public_collector: GDELT 查询名：Workday（原始：Workday, Inc.）
+2026-03-29 23:28:28,097 [WARNING] public_collector: GDELT 请求失败 [Workday, Inc.] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Workday%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20221128000000&enddatetime=20221206235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:28:50,085 [WARNING] public_collector: GDELT 请求失败 [Workday, Inc.] 第2次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Workday%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20221128000000&enddatetime=20221206235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:29:24,526 [INFO] public_collector: [GDELT] Workday, Inc. @ 2022-11-29：获取 44 条新闻
+2026-03-29 23:29:24,530 [INFO] public_collector: [聚合] WDAY @ 2022-11-29：27 条，情绪均值 = -0.0056
+2026-03-29 23:29:24,532 [INFO] aligner:   官方文本：5,922 字符 | 公众新闻：27 条 | 情绪均值：-0.0056 | 并购类型：unknown
+2026-03-29 23:29:24,532 [INFO] aligner: [对齐 4/6] WDAY | 2020-04-06
+2026-03-29 23:29:26,369 [INFO] public_collector: [Finnhub] WDAY @ 2020-04-06：获取 0 条新闻
+2026-03-29 23:29:26,371 [INFO] public_collector: GDELT 查询名：Workday（原始：Workday, Inc.）
+2026-03-29 23:29:48,302 [INFO] public_collector: [GDELT] Workday, Inc. @ 2020-04-06：获取 25 条新闻
+2026-03-29 23:29:48,308 [INFO] public_collector: [聚合] WDAY @ 2020-04-06：17 条，情绪均值 = -0.0243
+2026-03-29 23:29:48,309 [INFO] aligner:   官方文本：13,785 字符 | 公众新闻：17 条 | 情绪均值：-0.0243 | 并购类型：unknown
+2026-03-29 23:29:48,309 [INFO] aligner: [对齐 5/6] OKTA | 2022-03-25
+2026-03-29 23:29:50,197 [INFO] public_collector: [Finnhub] OKTA @ 2022-03-25：获取 0 条新闻
+2026-03-29 23:29:50,200 [INFO] public_collector: GDELT 查询名：Okta（原始：Okta, Inc.）
+2026-03-29 23:30:05,275 [WARNING] public_collector: GDELT 请求失败 [Okta, Inc.] 第1次: Expecting value: line 1 column 1 (char 0)
+2026-03-29 23:30:22,786 [WARNING] public_collector: GDELT 请求失败 [Okta, Inc.] 第2次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Okta%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220324000000&enddatetime=20220401235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:30:40,161 [WARNING] public_collector: GDELT 请求失败 [Okta, Inc.] 第3次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Okta%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220324000000&enddatetime=20220401235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:30:50,947 [WARNING] public_collector: GDELT 请求失败 [Okta, Inc.] 第4次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Okta%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220324000000&enddatetime=20220401235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:31:00,955 [INFO] aligner:   官方文本：5,152 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 23:31:00,955 [INFO] aligner: [对齐 6/6] OKTA | 2021-05-10
+2026-03-29 23:31:02,750 [INFO] public_collector: [Finnhub] OKTA @ 2021-05-10：获取 0 条新闻
+2026-03-29 23:31:02,752 [INFO] public_collector: GDELT 查询名：Okta（原始：Okta, Inc.）
+2026-03-29 23:31:10,199 [WARNING] public_collector: GDELT 请求失败 [Okta, Inc.] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Okta%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20210509000000&enddatetime=20210517235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:31:31,495 [WARNING] public_collector: GDELT 请求失败 [Okta, Inc.] 第2次: Expecting value: line 1 column 1 (char 0)
+2026-03-29 23:31:53,183 [WARNING] public_collector: GDELT 请求失败 [Okta, Inc.] 第3次: Expecting value: line 1 column 1 (char 0)
+2026-03-29 23:32:13,861 [WARNING] public_collector: GDELT 请求失败 [Okta, Inc.] 第4次: Expecting value: line 1 column 1 (char 0)
+2026-03-29 23:32:23,869 [INFO] aligner:   官方文本：4,870 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 23:32:23,869 [INFO] aligner: 对齐完成，共 6 条记录写入数据库
+2026-03-29 23:32:23,898 [INFO] __main__: CSV 快照已保存：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.csv
+2026-03-29 23:34:13,791 [INFO] __main__: =======================================================
+2026-03-29 23:34:13,792 [INFO] __main__: Step 1 / 3  初始化数据库
+2026-03-29 23:34:13,792 [INFO] __main__: =======================================================
+2026-03-29 23:34:13,795 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 23:34:13,795 [INFO] __main__: =======================================================
+2026-03-29 23:34:13,795 [INFO] __main__: Step 2 / 3  采集 SEC EDGAR 文件
+2026-03-29 23:34:13,795 [INFO] __main__: =======================================================
+2026-03-29 23:34:13,795 [INFO] sec_collector: 精准模式：查询 5 个 ticker
+2026-03-29 23:34:13,795 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 23:34:14,699 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 23:34:20,485 [INFO] sec_collector: [CRM] Submissions API：找到 2 份候选文件
+2026-03-29 23:34:21,035 [INFO] sec_collector: [HPE] Submissions API：找到 21 份候选文件
+2026-03-29 23:34:21,591 [INFO] sec_collector: [DELL] Submissions API：找到 28 份候选文件
+2026-03-29 23:34:22,094 [INFO] sec_collector: [PANW] Submissions API：找到 15 份候选文件
+2026-03-29 23:34:22,816 [INFO] sec_collector: [FTNT] Submissions API：找到 5 份候选文件
+2026-03-29 23:34:22,817 [INFO] sec_collector: 候选文件总数：37
+2026-03-29 23:34:22,817 [INFO] sec_collector: [1/37] CRM | 8-K | 2024-11-05 | 0001193125-24-251243
+2026-03-29 23:34:23,362 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:23,363 [INFO] sec_collector: [2/37] CRM | 8-K | 2024-02-28 | 0001108524-24-000002
+2026-03-29 23:34:24,246 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:24,247 [INFO] sec_collector: [3/37] HPE | 8-K | 2024-09-26 | 0001140361-24-042054
+2026-03-29 23:34:25,417 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:25,417 [INFO] sec_collector: [4/37] HPE | 8-K | 2024-09-13 | 0001140361-24-041069
+2026-03-29 23:34:27,552 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:27,552 [INFO] sec_collector: [5/37] HPE | 8-K | 2024-09-12 | 0001140361-24-040886
+2026-03-29 23:34:28,741 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:28,742 [INFO] sec_collector: [6/37] HPE | 8-K | 2024-09-09 | 0001140361-24-040610
+2026-03-29 23:34:30,839 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:30,840 [INFO] sec_collector: [7/37] HPE | 8-K | 2024-05-24 | 0001645590-24-000081
+2026-03-29 23:34:32,056 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:32,056 [INFO] sec_collector: [8/37] HPE | 8-K | 2024-01-10 | 0001140361-24-001613
+2026-03-29 23:34:34,810 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:34,811 [INFO] sec_collector: [9/37] HPE | 8-K | 2023-06-14 | 0001140361-23-029849
+2026-03-29 23:34:36,164 [INFO] sec_collector:   ✓ 完成，文本长度 272 字符
+2026-03-29 23:34:36,164 [INFO] sec_collector: [10/37] HPE | 8-K | 2023-06-07 | 0001140361-23-028791
+2026-03-29 23:34:37,394 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:37,395 [INFO] sec_collector: [11/37] HPE | 8-K | 2023-05-26 | 0001645590-23-000050
+2026-03-29 23:34:38,493 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:38,493 [INFO] sec_collector: [12/37] HPE | 8-K | 2023-03-21 | 0001140361-23-012785
+2026-03-29 23:34:39,655 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:39,655 [INFO] sec_collector: [13/37] DELL | 8-K | 2024-10-08 | 0001193125-24-234446
+2026-03-29 23:34:40,715 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:40,715 [INFO] sec_collector: [14/37] DELL | 8-K | 2024-10-02 | 0001193125-24-231195
+2026-03-29 23:34:42,238 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:42,238 [INFO] sec_collector: [15/37] DELL | 8-K | 2024-03-18 | 0001193125-24-070193
+2026-03-29 23:34:43,418 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:43,418 [INFO] sec_collector: [16/37] DELL | 8-K | 2024-03-06 | 0001193125-24-059631
+2026-03-29 23:34:45,056 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:45,056 [INFO] sec_collector: [17/37] DELL | 8-K | 2023-12-18 | 0001193125-23-297664
+2026-03-29 23:34:47,401 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:47,402 [INFO] sec_collector: [18/37] DELL | 8-K | 2023-12-04 | 0001193125-23-288428
+2026-03-29 23:34:48,925 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:48,925 [INFO] sec_collector: [19/37] DELL | 8-K | 2023-10-05 | 0001193125-23-251131
+2026-03-29 23:34:50,491 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:50,492 [INFO] sec_collector: [20/37] DELL | 8-K | 2023-06-30 | 0001193125-23-180570
+2026-03-29 23:34:52,539 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:52,539 [INFO] sec_collector: [21/37] DELL | 8-K | 2023-06-15 | 0001193125-23-167472
+2026-03-29 23:34:54,180 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:54,180 [INFO] sec_collector: [22/37] DELL | 8-K | 2023-01-24 | 0001193125-23-014260
+2026-03-29 23:34:55,258 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:55,258 [INFO] sec_collector: [23/37] PANW | 8-K | 2024-11-20 | 0001327567-24-000036
+2026-03-29 23:34:56,951 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:56,952 [INFO] sec_collector: [24/37] PANW | 8-K | 2024-11-15 | 0001193125-24-259308
+2026-03-29 23:34:58,065 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:58,065 [INFO] sec_collector: [25/37] PANW | 8-K | 2024-09-04 | 0001327567-24-000026
+2026-03-29 23:34:59,704 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:34:59,705 [INFO] sec_collector: [26/37] PANW | 8-K | 2024-08-19 | 0001327567-24-000023
+2026-03-29 23:35:01,286 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:35:01,286 [INFO] sec_collector: [27/37] PANW | 8-K | 2024-05-16 | 0001327567-24-000010
+2026-03-29 23:35:03,376 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:35:03,376 [INFO] sec_collector: [28/37] PANW | 8-K | 2023-11-29 | 0001193125-23-285277
+2026-03-29 23:35:05,124 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:35:05,124 [INFO] sec_collector: [29/37] PANW | 8-K | 2023-11-17 | 0001327567-23-000035
+2026-03-29 23:35:06,188 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:35:06,188 [INFO] sec_collector: [30/37] PANW | 8-K | 2023-11-15 | 0001193125-23-277318
+2026-03-29 23:35:07,360 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:35:07,360 [INFO] sec_collector: [31/37] PANW | 8-K | 2023-04-19 | 0001327567-23-000009
+2026-03-29 23:35:08,534 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:35:08,534 [INFO] sec_collector: [32/37] PANW | 8-K | 2022-11-15 | 0001193125-22-285017
+2026-03-29 23:35:09,840 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:35:09,841 [INFO] sec_collector: [33/37] FTNT | 8-K | 2022-04-22 | 0001262039-22-000010
+2026-03-29 23:35:11,200 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:35:11,200 [INFO] sec_collector: [34/37] FTNT | 8-K | 2021-03-05 | 0001193125-21-071498
+2026-03-29 23:35:12,481 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:35:12,481 [INFO] sec_collector: [35/37] FTNT | 8-K | 2021-02-25 | 0001193125-21-057281
+2026-03-29 23:35:13,680 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:35:13,681 [INFO] sec_collector: [36/37] FTNT | 8-K | 2020-12-08 | 0001262039-20-000070
+2026-03-29 23:35:14,861 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:35:14,861 [INFO] sec_collector: [37/37] FTNT | 8-K | 2020-07-21 | 0001262039-20-000044
+2026-03-29 23:35:16,137 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:35:16,137 [INFO] sec_collector: 采集完毕，有效记录：1 条
+2026-03-29 23:35:16,137 [INFO] __main__: =======================================================
+2026-03-29 23:35:16,137 [INFO] __main__: Step 3 / 3  对齐公众数据并写入数据库
+2026-03-29 23:35:16,137 [INFO] __main__: =======================================================
+2026-03-29 23:35:16,137 [INFO] aligner: [对齐 1/1] HPE | 2023-06-14
+2026-03-29 23:35:17,988 [INFO] public_collector: [Finnhub] HPE @ 2023-06-14：获取 0 条新闻
+2026-03-29 23:35:17,992 [INFO] public_collector: GDELT 查询名：Hewlett Packard Enterprise（原始：Hewlett Packard Enterprise Co）
+2026-03-29 23:35:40,059 [INFO] public_collector: [GDELT] Hewlett Packard Enterprise Co @ 2023-06-14：获取 10 条新闻
+2026-03-29 23:35:40,065 [INFO] public_collector: [聚合] HPE @ 2023-06-14：8 条，情绪均值 = 0.178
+2026-03-29 23:35:40,067 [INFO] aligner:   官方文本：272 字符 | 公众新闻：8 条 | 情绪均值：0.178 | 并购类型：unknown
+2026-03-29 23:35:40,067 [INFO] aligner: 对齐完成，共 1 条记录写入数据库
+2026-03-29 23:35:40,097 [INFO] __main__: CSV 快照已保存：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.csv
+2026-03-29 23:45:10,550 [INFO] __main__: =======================================================
+2026-03-29 23:45:10,550 [INFO] __main__: Step 1 / 3  初始化数据库
+2026-03-29 23:45:10,550 [INFO] __main__: =======================================================
+2026-03-29 23:45:10,553 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 23:45:10,553 [INFO] __main__: =======================================================
+2026-03-29 23:45:10,553 [INFO] __main__: Step 2 / 3  采集 SEC EDGAR 文件
+2026-03-29 23:45:10,553 [INFO] __main__: =======================================================
+2026-03-29 23:45:10,553 [INFO] sec_collector: 精准模式：查询 5 个 ticker
+2026-03-29 23:45:10,553 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 23:45:11,497 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 23:45:12,289 [INFO] sec_collector: [ORCL] Submissions API：找到 28 份候选文件
+2026-03-29 23:45:12,864 [INFO] sec_collector: [IBM] Submissions API：找到 16 份候选文件
+2026-03-29 23:45:13,385 [INFO] sec_collector: [CSCO] Submissions API：找到 17 份候选文件
+2026-03-29 23:45:13,906 [INFO] sec_collector: [INTC] Submissions API：找到 16 份候选文件
+2026-03-29 23:45:14,502 [INFO] sec_collector: [ZS] Submissions API：找到 4 份候选文件
+2026-03-29 23:45:14,502 [INFO] sec_collector: 候选文件总数：44
+2026-03-29 23:45:14,503 [INFO] sec_collector: [1/44] ORCL | 8-K | 2024-12-09 | 0000950170-24-134537
+2026-03-29 23:45:16,090 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:16,091 [INFO] sec_collector: [2/44] ORCL | 8-K | 2024-09-27 | 0001193125-24-227971
+2026-03-29 23:45:17,292 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:17,292 [INFO] sec_collector: [3/44] ORCL | 8-K | 2024-09-09 | 0000950170-24-104753
+2026-03-29 23:45:18,841 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:18,841 [INFO] sec_collector: [4/44] ORCL | 8-K | 2024-06-11 | 0000950170-24-071916
+2026-03-29 23:45:20,472 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:20,472 [INFO] sec_collector: [5/44] ORCL | 8-K | 2024-03-11 | 0000950170-24-029250
+2026-03-29 23:45:22,087 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:22,087 [INFO] sec_collector: [6/44] ORCL | 8-K | 2023-12-11 | 0000950170-23-069410
+2026-03-29 23:45:23,823 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:23,823 [INFO] sec_collector: [7/44] ORCL | 8-K | 2023-09-11 | 0000950170-23-047471
+2026-03-29 23:45:25,733 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:25,733 [INFO] sec_collector: [8/44] ORCL | 8-K | 2023-06-12 | 0000950170-23-027490
+2026-03-29 23:45:27,680 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:27,681 [INFO] sec_collector: [9/44] ORCL | 8-K | 2023-03-09 | 0001564590-23-003362
+2026-03-29 23:45:29,453 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:29,453 [INFO] sec_collector: [10/44] ORCL | 8-K | 2023-02-06 | 0001193125-23-025644
+2026-03-29 23:45:30,523 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:30,524 [INFO] sec_collector: [11/44] IBM | 8-K | 2024-09-11 | 0001104659-24-098942
+2026-03-29 23:45:31,682 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:31,682 [INFO] sec_collector: [12/44] IBM | 8-K | 2024-06-21 | 0000950157-24-000918
+2026-03-29 23:45:32,871 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:32,871 [INFO] sec_collector: [13/44] IBM | 8-K | 2024-02-02 | 0001104659-24-010040
+2026-03-29 23:45:34,206 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:34,206 [INFO] sec_collector: [14/44] IBM | 8-K | 2023-06-16 | 0001104659-23-072220
+2026-03-29 23:45:35,059 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:35,059 [INFO] sec_collector: [15/44] IBM | 8-K | 2022-09-28 | 0001104659-22-103516
+2026-03-29 23:45:36,480 [INFO] sec_collector:   ✓ 完成，文本长度 8,861 字符
+2026-03-29 23:45:36,480 [INFO] sec_collector: [16/44] IBM | 8-K | 2022-09-13 | 0001104659-22-099631
+2026-03-29 23:45:37,511 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:37,511 [INFO] sec_collector: [17/44] IBM | 8-K | 2022-07-01 | 0000950157-22-000765
+2026-03-29 23:45:38,595 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:38,595 [INFO] sec_collector: [18/44] IBM | 8-K | 2021-11-04 | 0001558370-21-014643
+2026-03-29 23:45:41,053 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:41,053 [INFO] sec_collector: [19/44] IBM | 8-K | 2021-10-12 | 0001104659-21-125064
+2026-03-29 23:45:42,845 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:42,845 [INFO] sec_collector: [20/44] IBM | 8-K | 2021-10-04 | 0001558370-21-012961
+2026-03-29 23:45:45,262 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:45,263 [INFO] sec_collector: [21/44] CSCO | 8-K | 2024-03-18 | 0001193125-24-070175
+2026-03-29 23:45:46,781 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:46,782 [INFO] sec_collector: [22/44] CSCO | 8-K | 2024-02-26 | 0001193125-24-046231
+2026-03-29 23:45:47,908 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:47,909 [INFO] sec_collector: [23/44] CSCO | 8-K | 2024-02-08 | 0001193125-24-028353
+2026-03-29 23:45:48,727 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:48,727 [INFO] sec_collector: [24/44] CSCO | 8-K | 2023-09-21 | 0001193125-23-239165
+2026-03-29 23:45:50,980 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:50,981 [INFO] sec_collector: [25/44] CSCO | 8-K | 2022-12-16 | 0000858877-22-000029
+2026-03-29 23:45:52,263 [INFO] sec_collector:   ✓ 完成，文本长度 4,388 字符
+2026-03-29 23:45:52,263 [INFO] sec_collector: [26/44] CSCO | 8-K | 2022-10-04 | 0000858877-22-000018
+2026-03-29 23:45:53,437 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:45:53,437 [INFO] sec_collector: [27/44] CSCO | 8-K | 2022-09-15 | 0000858877-22-000015
+2026-03-29 23:45:54,605 [INFO] sec_collector:   ✓ 完成，文本长度 4,086 字符
+2026-03-29 23:45:54,605 [INFO] sec_collector: [28/44] CSCO | 8-K | 2022-06-17 | 0001193125-22-176552
+2026-03-29 23:45:55,968 [INFO] sec_collector:   ✓ 完成，文本长度 4,104 字符
+2026-03-29 23:45:55,968 [INFO] sec_collector: [29/44] CSCO | 8-K | 2022-03-28 | 0001193125-22-086807
+2026-03-29 23:45:57,261 [INFO] sec_collector:   ✓ 完成，文本长度 4,073 字符
+2026-03-29 23:45:57,261 [INFO] sec_collector: [30/44] CSCO | 8-K | 2021-12-17 | 0001193125-21-361182
+2026-03-29 23:45:58,840 [INFO] sec_collector:   ✓ 完成，文本长度 4,082 字符
+2026-03-29 23:45:58,840 [INFO] sec_collector: [31/44] INTC | 8-K | 2024-11-27 | 0000050863-24-000169
+2026-03-29 23:46:00,708 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:46:00,708 [INFO] sec_collector: [32/44] INTC | 8-K | 2024-06-14 | 0000050863-24-000110
+2026-03-29 23:46:01,931 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:46:01,931 [INFO] sec_collector: [33/44] INTC | 8-K | 2024-06-04 | 0000050863-24-000103
+2026-03-29 23:46:03,566 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:46:03,569 [INFO] sec_collector: [34/44] INTC | 8-K | 2024-02-21 | 0001193125-24-041435
+2026-03-29 23:46:04,756 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:46:04,756 [INFO] sec_collector: [35/44] INTC | 8-K | 2023-02-10 | 0001193125-23-032608
+2026-03-29 23:46:05,931 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:46:05,931 [INFO] sec_collector: [36/44] INTC | 8-K | 2022-11-22 | 0001193125-22-291100
+2026-03-29 23:46:07,324 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:46:07,325 [INFO] sec_collector: [37/44] INTC | 8-K | 2022-11-22 | 0001193125-22-290385
+2026-03-29 23:46:08,937 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:46:08,937 [INFO] sec_collector: [38/44] INTC | 8-K | 2022-08-23 | 0001193125-22-226986
+2026-03-29 23:46:11,356 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:46:11,356 [INFO] sec_collector: [39/44] INTC | 8-K | 2022-08-05 | 0001193125-22-213699
+2026-03-29 23:46:12,509 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:46:12,509 [INFO] sec_collector: [40/44] INTC | 8-K | 2021-08-12 | 0001193125-21-244840
+2026-03-29 23:46:13,820 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:46:13,820 [INFO] sec_collector: [41/44] ZS | 8-K | 2022-10-11 | 0001713683-22-000104
+2026-03-29 23:46:15,295 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:46:15,295 [INFO] sec_collector: [42/44] ZS | 8-K | 2020-06-25 | 0001193125-20-179084
+2026-03-29 23:46:17,681 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:46:17,681 [INFO] sec_collector: [43/44] ZS | 8-K | 2020-05-28 | 0001713683-20-000082
+2026-03-29 23:46:19,655 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:46:19,655 [INFO] sec_collector: [44/44] ZS | 8-K | 2020-01-15 | 0001713683-20-000015
+2026-03-29 23:46:21,405 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:46:21,405 [INFO] sec_collector: 采集完毕，有效记录：6 条
+2026-03-29 23:46:21,405 [INFO] __main__: =======================================================
+2026-03-29 23:46:21,405 [INFO] __main__: Step 3 / 3  对齐公众数据并写入数据库
+2026-03-29 23:46:21,405 [INFO] __main__: =======================================================
+2026-03-29 23:46:21,405 [INFO] aligner: [对齐 1/6] IBM | 2022-09-28
+2026-03-29 23:46:23,170 [INFO] public_collector: [Finnhub] IBM @ 2022-09-28：获取 0 条新闻
+2026-03-29 23:46:23,175 [INFO] public_collector: GDELT 查询名：International Business Machines（原始：INTERNATIONAL BUSINESS MACHINES CORP）
+2026-03-29 23:46:30,481 [WARNING] public_collector: GDELT 请求失败 [INTERNATIONAL BUSINESS MACHINES CORP] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22International+Business+Machines%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220927000000&enddatetime=20221005235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:47:01,126 [INFO] public_collector: [GDELT] INTERNATIONAL BUSINESS MACHINES CORP @ 2022-09-28：获取 16 条新闻
+2026-03-29 23:47:01,131 [INFO] public_collector: [聚合] IBM @ 2022-09-28：9 条，情绪均值 = 0.3359
+2026-03-29 23:47:01,132 [INFO] aligner:   官方文本：8,861 字符 | 公众新闻：9 条 | 情绪均值：0.3359 | 并购类型：unknown
+2026-03-29 23:47:01,133 [INFO] aligner: [对齐 2/6] CSCO | 2022-12-16
+2026-03-29 23:47:02,909 [INFO] public_collector: [Finnhub] CSCO @ 2022-12-16：获取 0 条新闻
+2026-03-29 23:47:02,912 [INFO] public_collector: GDELT 查询名：Cisco Systems（原始：CISCO SYSTEMS, INC.）
+2026-03-29 23:47:26,128 [INFO] public_collector: [GDELT] CISCO SYSTEMS, INC. @ 2022-12-16：获取 35 条新闻
+2026-03-29 23:47:26,133 [INFO] public_collector: [聚合] CSCO @ 2022-12-16：13 条，情绪均值 = 0.1652
+2026-03-29 23:47:26,134 [INFO] aligner:   官方文本：4,388 字符 | 公众新闻：13 条 | 情绪均值：0.1652 | 并购类型：unknown
+2026-03-29 23:47:26,134 [INFO] aligner: [对齐 3/6] CSCO | 2022-09-15
+2026-03-29 23:47:27,994 [INFO] public_collector: [Finnhub] CSCO @ 2022-09-15：获取 0 条新闻
+2026-03-29 23:47:27,997 [INFO] public_collector: GDELT 查询名：Cisco Systems（原始：CISCO SYSTEMS, INC.）
+2026-03-29 23:47:58,411 [INFO] public_collector: [GDELT] CISCO SYSTEMS, INC. @ 2022-09-15：获取 36 条新闻
+2026-03-29 23:47:58,416 [INFO] public_collector: [聚合] CSCO @ 2022-09-15：25 条，情绪均值 = 0.275
+2026-03-29 23:47:58,418 [INFO] aligner:   官方文本：4,086 字符 | 公众新闻：25 条 | 情绪均值：0.275 | 并购类型：unknown
+2026-03-29 23:47:58,418 [INFO] aligner: [对齐 4/6] CSCO | 2022-06-17
+2026-03-29 23:48:00,262 [INFO] public_collector: [Finnhub] CSCO @ 2022-06-17：获取 0 条新闻
+2026-03-29 23:48:00,265 [INFO] public_collector: GDELT 查询名：Cisco Systems（原始：CISCO SYSTEMS, INC.）
+2026-03-29 23:48:07,463 [WARNING] public_collector: GDELT 请求失败 [CISCO SYSTEMS, INC.] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Cisco+Systems%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220616000000&enddatetime=20220624235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:48:27,174 [WARNING] public_collector: GDELT 请求失败 [CISCO SYSTEMS, INC.] 第2次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Cisco+Systems%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220616000000&enddatetime=20220624235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:48:44,627 [WARNING] public_collector: GDELT 请求失败 [CISCO SYSTEMS, INC.] 第3次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Cisco+Systems%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220616000000&enddatetime=20220624235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:49:01,994 [WARNING] public_collector: GDELT 请求失败 [CISCO SYSTEMS, INC.] 第4次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Cisco+Systems%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220616000000&enddatetime=20220624235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:49:12,004 [INFO] aligner:   官方文本：4,104 字符 | 公众新闻：0 条 | 情绪均值：None | 并购类型：unknown
+2026-03-29 23:49:12,004 [INFO] aligner: [对齐 5/6] CSCO | 2022-03-28
+2026-03-29 23:49:13,839 [INFO] public_collector: [Finnhub] CSCO @ 2022-03-28：获取 0 条新闻
+2026-03-29 23:49:13,841 [INFO] public_collector: GDELT 查询名：Cisco Systems（原始：CISCO SYSTEMS, INC.）
+2026-03-29 23:49:21,286 [WARNING] public_collector: GDELT 请求失败 [CISCO SYSTEMS, INC.] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Cisco+Systems%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220327000000&enddatetime=20220404235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:49:38,598 [WARNING] public_collector: GDELT 请求失败 [CISCO SYSTEMS, INC.] 第2次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Cisco+Systems%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20220327000000&enddatetime=20220404235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:50:15,038 [INFO] public_collector: [GDELT] CISCO SYSTEMS, INC. @ 2022-03-28：获取 40 条新闻
+2026-03-29 23:50:15,043 [INFO] public_collector: [聚合] CSCO @ 2022-03-28：25 条，情绪均值 = 0.2559
+2026-03-29 23:50:15,044 [INFO] aligner:   官方文本：4,073 字符 | 公众新闻：25 条 | 情绪均值：0.2559 | 并购类型：unknown
+2026-03-29 23:50:15,044 [INFO] aligner: [对齐 6/6] CSCO | 2021-12-17
+2026-03-29 23:50:16,970 [INFO] public_collector: [Finnhub] CSCO @ 2021-12-17：获取 0 条新闻
+2026-03-29 23:50:16,972 [INFO] public_collector: GDELT 查询名：Cisco Systems（原始：CISCO SYSTEMS, INC.）
+2026-03-29 23:50:49,581 [INFO] public_collector: [GDELT] CISCO SYSTEMS, INC. @ 2021-12-17：获取 27 条新闻
+2026-03-29 23:50:49,585 [INFO] public_collector: [聚合] CSCO @ 2021-12-17：18 条，情绪均值 = 0.1848
+2026-03-29 23:50:49,586 [INFO] aligner:   官方文本：4,082 字符 | 公众新闻：18 条 | 情绪均值：0.1848 | 并购类型：unknown
+2026-03-29 23:50:49,586 [INFO] aligner: 对齐完成，共 6 条记录写入数据库
+2026-03-29 23:50:49,628 [INFO] __main__: CSV 快照已保存：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.csv
+2026-03-29 23:53:39,880 [INFO] __main__: =======================================================
+2026-03-29 23:53:39,881 [INFO] __main__: Step 1 / 3  初始化数据库
+2026-03-29 23:53:39,881 [INFO] __main__: =======================================================
+2026-03-29 23:53:39,883 [INFO] database: 数据库已就绪：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.db
+2026-03-29 23:53:39,883 [INFO] __main__: =======================================================
+2026-03-29 23:53:39,883 [INFO] __main__: Step 2 / 3  采集 SEC EDGAR 文件
+2026-03-29 23:53:39,883 [INFO] __main__: =======================================================
+2026-03-29 23:53:39,883 [INFO] sec_collector: 精准模式：查询 5 个 ticker
+2026-03-29 23:53:39,883 [INFO] sec_collector: 加载 SEC ticker→CIK 映射表…
+2026-03-29 23:53:40,904 [INFO] sec_collector: 映射表加载完成，共 10447 家公司
+2026-03-29 23:53:41,653 [INFO] sec_collector: [SNPS] Submissions API：找到 26 份候选文件
+2026-03-29 23:53:42,192 [INFO] sec_collector: [TXN] Submissions API：找到 13 份候选文件
+2026-03-29 23:53:43,459 [INFO] sec_collector: [MDT] Submissions API：找到 10 份候选文件
+2026-03-29 23:53:43,984 [INFO] sec_collector: [SYK] Submissions API：找到 14 份候选文件
+2026-03-29 23:53:44,773 [INFO] sec_collector: [ICE] Submissions API：找到 34 份候选文件
+2026-03-29 23:53:44,774 [INFO] sec_collector: 候选文件总数：50
+2026-03-29 23:53:44,774 [INFO] sec_collector: [1/50] SNPS | 8-K | 2024-10-01 | 0001193125-24-230216
+2026-03-29 23:53:45,931 [INFO] sec_collector:   ✓ 完成，文本长度 3,364 字符
+2026-03-29 23:53:45,931 [INFO] sec_collector: [2/50] SNPS | 8-K | 2024-05-16 | 0001140361-24-026367
+2026-03-29 23:53:47,222 [INFO] sec_collector:   ✓ 完成，文本长度 2,971 字符
+2026-03-29 23:53:47,222 [INFO] sec_collector: [3/50] SNPS | 8-K | 2024-05-06 | 0001193125-24-131535
+2026-03-29 23:53:49,040 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:53:49,040 [INFO] sec_collector: [4/50] SNPS | 8-K | 2024-03-20 | 0001193125-24-072735
+2026-03-29 23:53:51,201 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:53:51,201 [INFO] sec_collector: [5/50] SNPS | 8-K | 2024-03-19 | 0001193125-24-071362
+2026-03-29 23:53:52,503 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:53:52,503 [INFO] sec_collector: [6/50] SNPS | 8-K | 2024-02-14 | 0001193125-24-036439
+2026-03-29 23:53:55,336 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:53:55,336 [INFO] sec_collector: [7/50] SNPS | 8-K | 2024-01-16 | 0001193125-24-008120
+2026-03-29 23:53:57,998 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:53:57,998 [INFO] sec_collector: [8/50] SNPS | 8-K | 2023-08-24 | 0001193125-23-220159
+2026-03-29 23:53:59,880 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:53:59,880 [INFO] sec_collector: [9/50] SNPS | 8-K | 2023-05-25 | 0001193125-23-154314
+2026-03-29 23:54:01,812 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:01,812 [INFO] sec_collector: [10/50] SNPS | 8-K | 2023-02-23 | 0001193125-23-046648
+2026-03-29 23:54:04,142 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:04,142 [INFO] sec_collector: [11/50] TXN | 8-K | 2024-09-19 | 0000097476-24-000036
+2026-03-29 23:54:05,741 [INFO] sec_collector:   ✓ 完成，文本长度 3,723 字符
+2026-03-29 23:54:05,741 [INFO] sec_collector: [12/50] TXN | 8-K | 2024-02-08 | 0001193125-24-028127
+2026-03-29 23:54:07,041 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:07,042 [INFO] sec_collector: [13/50] TXN | 8-K | 2023-09-21 | 0000950103-23-013859
+2026-03-29 23:54:08,242 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:08,242 [INFO] sec_collector: [14/50] TXN | 8-K | 2023-05-18 | 0001193125-23-148183
+2026-03-29 23:54:09,252 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:09,252 [INFO] sec_collector: [15/50] TXN | 8-K | 2023-03-14 | 0001193125-23-070157
+2026-03-29 23:54:10,503 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:10,504 [INFO] sec_collector: [16/50] TXN | 8-K | 2022-11-18 | 0001193125-22-288982
+2026-03-29 23:54:11,785 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:11,785 [INFO] sec_collector: [17/50] TXN | 8-K | 2022-09-15 | 0000097476-22-000043
+2026-03-29 23:54:12,983 [INFO] sec_collector:   ✓ 完成，文本长度 3,740 字符
+2026-03-29 23:54:12,983 [INFO] sec_collector: [18/50] TXN | 8-K | 2022-08-16 | 0001193125-22-222326
+2026-03-29 23:54:14,089 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:14,090 [INFO] sec_collector: [19/50] TXN | 8-K | 2021-09-15 | 0000097476-21-000025
+2026-03-29 23:54:15,559 [INFO] sec_collector:   ✓ 完成，文本长度 3,711 字符
+2026-03-29 23:54:15,559 [INFO] sec_collector: [20/50] TXN | 8-K | 2021-09-15 | 0001193125-21-273955
+2026-03-29 23:54:16,638 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:16,639 [INFO] sec_collector: [21/50] MDT | 8-K | 2024-06-03 | 0001193125-24-152334
+2026-03-29 23:54:17,778 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:17,779 [INFO] sec_collector: [22/50] MDT | 8-K | 2023-12-06 | 0001613103-23-000152
+2026-03-29 23:54:19,072 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:19,072 [INFO] sec_collector: [23/50] MDT | 8-K | 2023-03-30 | 0001193125-23-085642
+2026-03-29 23:54:20,288 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:20,288 [INFO] sec_collector: [24/50] MDT | 8-K | 2023-03-07 | 0001613103-23-000013
+2026-03-29 23:54:21,580 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:21,580 [INFO] sec_collector: [25/50] MDT | 8-K | 2022-09-21 | 0001193125-22-248112
+2026-03-29 23:54:23,229 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:23,229 [INFO] sec_collector: [26/50] MDT | 8-K | 2022-05-02 | 0001193125-22-135320
+2026-03-29 23:54:24,481 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:24,482 [INFO] sec_collector: [27/50] MDT | 8-K | 2021-12-14 | 0001613103-21-000065
+2026-03-29 23:54:25,659 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:25,659 [INFO] sec_collector: [28/50] MDT | 8-K | 2020-09-29 | 0001193125-20-257811
+2026-03-29 23:54:26,712 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:26,712 [INFO] sec_collector: [29/50] MDT | 8-K | 2020-05-21 | 0001613103-20-000018
+2026-03-29 23:54:29,043 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:29,043 [INFO] sec_collector: [30/50] MDT | 8-K | 2020-05-13 | 0001613103-20-000016
+2026-03-29 23:54:30,275 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:30,275 [INFO] sec_collector: [31/50] SYK | 8-K | 2024-09-11 | 0001193125-24-217275
+2026-03-29 23:54:31,309 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:31,310 [INFO] sec_collector: [32/50] SYK | 8-K | 2023-12-11 | 0001193125-23-292590
+2026-03-29 23:54:32,395 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:32,396 [INFO] sec_collector: [33/50] SYK | 8-K | 2023-12-08 | 0001193125-23-291773
+2026-03-29 23:54:33,541 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:33,541 [INFO] sec_collector: [34/50] SYK | 8-K | 2023-06-16 | 0001193125-23-169034
+2026-03-29 23:54:34,682 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:34,682 [INFO] sec_collector: [35/50] SYK | 8-K | 2022-02-25 | 0000310764-22-000035
+2026-03-29 23:54:35,904 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:35,904 [INFO] sec_collector: [36/50] SYK | 8-K | 2022-02-23 | 0001193125-22-050010
+2026-03-29 23:54:37,144 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:37,145 [INFO] sec_collector: [37/50] SYK | 8-K | 2022-01-11 | 0001193125-22-006816
+2026-03-29 23:54:38,863 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:38,864 [INFO] sec_collector: [38/50] SYK | 8-K | 2022-01-03 | 0001193125-22-000261
+2026-03-29 23:54:39,940 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:39,940 [INFO] sec_collector: [39/50] SYK | 8-K | 2020-11-23 | 0001193125-20-301421
+2026-03-29 23:54:41,375 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:41,375 [INFO] sec_collector: [40/50] SYK | 8-K | 2020-11-16 | 0001193125-20-294811
+2026-03-29 23:54:42,748 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:42,749 [INFO] sec_collector: [41/50] ICE | 8-K | 2024-06-05 | 0001104659-24-068724
+2026-03-29 23:54:43,906 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:43,906 [INFO] sec_collector: [42/50] ICE | 8-K | 2024-06-05 | 0001193125-24-155176
+2026-03-29 23:54:45,310 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:45,310 [INFO] sec_collector: [43/50] ICE | 8-K | 2024-05-13 | 0001193125-24-137264
+2026-03-29 23:54:46,446 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:46,447 [INFO] sec_collector: [44/50] ICE | 8-K | 2024-05-03 | 0001193125-24-130894
+2026-03-29 23:54:48,416 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:48,416 [INFO] sec_collector: [45/50] ICE | 8-K | 2024-03-01 | 0001193125-24-055927
+2026-03-29 23:54:50,136 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:50,136 [INFO] sec_collector: [46/50] ICE | 8-K | 2023-11-08 | 0001193125-23-273543
+2026-03-29 23:54:52,992 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:52,993 [INFO] sec_collector: [47/50] ICE | 8-K | 2023-09-15 | 0001193125-23-235792
+2026-03-29 23:54:54,986 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:54,986 [INFO] sec_collector: [48/50] ICE | 8-K | 2023-09-08 | 0001193125-23-231558
+2026-03-29 23:54:56,160 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:56,161 [INFO] sec_collector: [49/50] ICE | 8-K | 2023-09-05 | 0001193125-23-228147
+2026-03-29 23:54:57,905 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:57,905 [INFO] sec_collector: [50/50] ICE | 8-K | 2023-08-28 | 0001193125-23-221843
+2026-03-29 23:54:59,473 [WARNING] sec_collector:   清洗后过短（0 字符），跳过
+2026-03-29 23:54:59,473 [INFO] sec_collector: 采集完毕，有效记录：5 条
+2026-03-29 23:54:59,473 [INFO] __main__: =======================================================
+2026-03-29 23:54:59,473 [INFO] __main__: Step 3 / 3  对齐公众数据并写入数据库
+2026-03-29 23:54:59,473 [INFO] __main__: =======================================================
+2026-03-29 23:54:59,473 [INFO] aligner: [对齐 1/5] SNPS | 2024-10-01
+2026-03-29 23:55:01,536 [INFO] public_collector: [Finnhub] SNPS @ 2024-10-01：获取 0 条新闻
+2026-03-29 23:55:01,539 [INFO] public_collector: GDELT 查询名：Synopsys（原始：SYNOPSYS INC）
+2026-03-29 23:55:11,466 [WARNING] public_collector: GDELT 限速，等待 30s 后重试…
+2026-03-29 23:56:10,710 [INFO] public_collector: [GDELT] SYNOPSYS INC @ 2024-10-01：获取 2 条新闻
+2026-03-29 23:56:10,716 [INFO] public_collector: [聚合] SNPS @ 2024-10-01：1 条，情绪均值 = 0.3818
+2026-03-29 23:56:10,717 [INFO] aligner:   官方文本：3,364 字符 | 公众新闻：1 条 | 情绪均值：0.3818 | 并购类型：unknown
+2026-03-29 23:56:10,717 [INFO] aligner: [对齐 2/5] SNPS | 2024-05-16
+2026-03-29 23:56:13,189 [INFO] public_collector: [Finnhub] SNPS @ 2024-05-16：获取 0 条新闻
+2026-03-29 23:56:13,192 [INFO] public_collector: GDELT 查询名：Synopsys（原始：SYNOPSYS INC）
+2026-03-29 23:56:40,717 [INFO] public_collector: [GDELT] SYNOPSYS INC @ 2024-05-16：获取 16 条新闻
+2026-03-29 23:56:40,721 [INFO] public_collector: [聚合] SNPS @ 2024-05-16：14 条，情绪均值 = 0.1725
+2026-03-29 23:56:40,723 [INFO] aligner:   官方文本：2,971 字符 | 公众新闻：14 条 | 情绪均值：0.1725 | 并购类型：unknown
+2026-03-29 23:56:40,723 [INFO] aligner: [对齐 3/5] TXN | 2024-09-19
+2026-03-29 23:56:42,488 [INFO] public_collector: [Finnhub] TXN @ 2024-09-19：获取 0 条新闻
+2026-03-29 23:56:42,490 [INFO] public_collector: GDELT 查询名：Texas Instruments（原始：TEXAS INSTRUMENTS INC）
+2026-03-29 23:57:12,352 [INFO] public_collector: [GDELT] TEXAS INSTRUMENTS INC @ 2024-09-19：获取 3 条新闻
+2026-03-29 23:57:12,356 [INFO] public_collector: [聚合] TXN @ 2024-09-19：3 条，情绪均值 = -0.1163
+2026-03-29 23:57:12,357 [INFO] aligner:   官方文本：3,723 字符 | 公众新闻：3 条 | 情绪均值：-0.1163 | 并购类型：unknown
+2026-03-29 23:57:12,358 [INFO] aligner: [对齐 4/5] TXN | 2022-09-15
+2026-03-29 23:57:14,271 [INFO] public_collector: [Finnhub] TXN @ 2022-09-15：获取 0 条新闻
+2026-03-29 23:57:14,272 [INFO] public_collector: GDELT 查询名：Texas Instruments（原始：TEXAS INSTRUMENTS INC）
+2026-03-29 23:57:36,847 [INFO] public_collector: [GDELT] TEXAS INSTRUMENTS INC @ 2022-09-15：获取 16 条新闻
+2026-03-29 23:57:36,852 [INFO] public_collector: [聚合] TXN @ 2022-09-15：15 条，情绪均值 = 0.2184
+2026-03-29 23:57:36,853 [INFO] aligner:   官方文本：3,740 字符 | 公众新闻：15 条 | 情绪均值：0.2184 | 并购类型：unknown
+2026-03-29 23:57:36,853 [INFO] aligner: [对齐 5/5] TXN | 2021-09-15
+2026-03-29 23:57:38,731 [INFO] public_collector: [Finnhub] TXN @ 2021-09-15：获取 0 条新闻
+2026-03-29 23:57:38,733 [INFO] public_collector: GDELT 查询名：Texas Instruments（原始：TEXAS INSTRUMENTS INC）
+2026-03-29 23:57:47,150 [WARNING] public_collector: GDELT 请求失败 [TEXAS INSTRUMENTS INC] 第1次: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Max retries exceeded with url: /api/v2/doc/doc?query=%22Texas+Instruments%22+%28merger+OR+acquisition+OR+%22takeover%22%29+sourcelang%3Aeng&mode=artlist&maxrecords=250&format=json&startdatetime=20210914000000&enddatetime=20210922235959&sort=hybridrel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-29 23:58:23,745 [INFO] public_collector: [GDELT] TEXAS INSTRUMENTS INC @ 2021-09-15：获取 13 条新闻
+2026-03-29 23:58:23,748 [INFO] public_collector: [聚合] TXN @ 2021-09-15：10 条，情绪均值 = 0.1689
+2026-03-29 23:58:23,750 [INFO] aligner:   官方文本：3,711 字符 | 公众新闻：10 条 | 情绪均值：0.1689 | 并购类型：unknown
+2026-03-29 23:58:23,750 [INFO] aligner: 对齐完成，共 5 条记录写入数据库
+2026-03-29 23:58:23,788 [INFO] __main__: CSV 快照已保存：/Users/xujieping/Desktop/ma_corpus/data/ma_corpus.csv
